@@ -1,0 +1,241 @@
+/**
+ * default.css
+ * 
+ * Default styles for skin "Metro"
+ * 
+ * @package TeamCalPro
+ * @version 3.6.018 
+ * @author George Lewe
+ * @copyright Copyright (c) 2004-2015 by George Lewe
+ * @link http://www.lewe.com
+ * @license http://www.lewe.com/tcpro/doc/license.txt Extended GNU Public License
+ */
+    
+#header             { background-color: #083E7C; width: 100%; height: 60px; }
+#subheader          { background-color: #FF7200; width: 100%; height: 24px; }
+#subheader-content  { background-color: #FF7200; color: #FFFFFF; font-family: "Segoe UI", Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: normal; position: relative; top: 2px; left: 14px; width: 99%; }
+#menubar            { background-color: #E4E1DC; color: #000000; border-top: 0px solid #F7F7F7; border-bottom: 1px solid #CCCCCC; width: 100%; min-height: 26px; }
+#menubar-content    { width: 99%; }
+#optionsbar         { background-color: #E4E1DC; color: #000000; border-top: 0px solid #F7F7F7; border-bottom: 1px solid #CCCCCC; width: 100%; min-height: 30px; }
+#optionsbar-content { font-size: 11px; position: relative; left: 12px; top: 2px; width: 99%; }
+#optionsbar-buttons { position: relative; left: 18px; top: 4px; }
+#statusbar          { background-color: #FFFFFF; border-top: 0px solid #F7F7F7; border-bottom: 1px solid #999999; width: 100%; min-height: 28px; }
+#statusbar-content  { font-size: 11px; position: relative; top: 4px; left: 12px; width: 99%; }
+#content            { background-color: #F7F7F7; width: 100%; }
+#content-content    { padding: 12px; }
+#footer             { background-color: #0E6C38; width: 100%; text-align: center; border-top: 1px solid #999999; }
+#footer-content     { padding: 12px; }
+
+body               { background-color: #0E6C38; color: #AAAAAA; font-family: "Segoe UI", Arial, Helvetica, sans-serif; font-size: 12px; padding: 0px; margin: 0px; }
+
+p,a,ul             { font-family: "Segoe UI", Arial, Helvetica, sans-serif; font-size: 8pt; text-align: left; text-decoration: none; }
+hr                 { color: #AAAAAA; }
+span.text          { color: #333333; font-family: "Segoe UI", Arial, Helvetica, sans-serif; font-size: 8pt; text-align: left; text-decoration: none; }
+.collapse          { position: absolute; visibility: hidden; }
+.expand            { position: relative; visibility: visible; }
+
+table.header       { background-color: #083E7C; border: 1px #333333 solid; border-bottom: 0px #E4E1DC solid; border-collapse: collapse; margin: 0px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px; padding-top: 0px; width: 100%; }
+td.header-left     { background-color: #083E7C; padding-left: 0px; padding-right: 0px; padding-bottom: 0px; padding-top: 0px; width: 110px; }
+td.header-right    { background-color: #083E7C; padding-left: 0px; padding-right: 0px; padding-bottom: 0px; padding-top: 0px; width: 100%; }
+td.header-subtitle { background-color: #FF7200; color: #FFFFFF; font-size: 10pt; font-weight: normal; height: 24px; padding-left: 14px; padding-right: 0px; padding-bottom: 0px; padding-top: 0px; text-align: left; vertical-align: middle; }
+
+table.menubar      { background-color: #E4E1DC; border-collapse: collapse; border-left: 1px solid #000000; border-top: 0px solid #E4E1DC; border-right: 1px solid #000000; border-bottom: 1px solid #999999; color: #000000; height: 24px; width: 100%; }
+td.menubar-left    { background-color: #E4E1DC; font-size: 8pt; padding-left: 2px; padding-right: 2px; padding-bottom: 2px; padding-top: 2px; text-align: left; vertical-align: middle; }
+td.menubar-right   { background-color: #E4E1DC; font-size: 8pt; padding-left: 2px; padding-right: 2px; padding-bottom: 0px; padding-top: 2px; text-align: right; vertical-align: middle; }
+td.menubar-lower   { background-color: #E4E1DC; border-top: 1px solid #CCCCCC; font-size: 8pt; padding-left: 8px; padding-right: 2px; padding-bottom: 4px; padding-top: 4px; text-align: left; vertical-align: middle; }
+
+table.menu         { background-color: #EEEEEE; border-collapse: separate; border-left: 0px solid #000000; border-top: 0px solid #000000; border-right: 0px solid #000000; border-bottom: 0px solid #000000; border-spacing: 2px; padding-left: 1px; padding-right: 1px; padding-bottom: 1px; padding-top: 1px; }
+td.menu            { background-color: #EEEEEE; border-left: 1px solid #999999; border-top: 1px solid #999999; border-right: 1px solid #999999; border-bottom: 1px solid #999999; color: #000000; padding-left: 1px; padding-right: 1px; padding-bottom: 1px; padding-top: 1px; text-align: center; vertical-align: middle; width: 50px; }
+td.menuover        { background-color: #FFEBCD; border-left: 1px solid #FFB300; border-top: 1px solid #FFB300; border-right: 1px solid #FFB300; border-bottom: 1px solid #FFB300; color: #000000; padding-left: 1px; padding-right: 1px; padding-bottom: 1px; padding-top: 1px; text-align: center; vertical-align: middle; width: 50px; }
+a.menu             { background-color: #FFEBCD; color: #000000; font-size: 8pt; text-decoration: none;}
+a.menu:hover       { color: #000000; font-size: 8pt; text-decoration: underline;}
+
+table.statusbar    { background-color: #FFFFFF; border-collapse: collapse; border-left: 1px solid #000000; border-top: 0px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; color: #000000; height: 24px; width: 100%; }
+td.statusbar       { background-color: #FAFAFA; color: #555555; font-size: 8pt; padding-left: 4px; padding-right: 2px; padding-bottom: 0px; padding-top: 2px; text-align: left; vertical-align: middle; }
+
+td.title           { background-color: #E5E5E5; border-top: 0px solid #000000; border-right: 0px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; color: #000000; font-size: 9pt; font-weight: normal; padding-left: 4px; padding-right: 4px; padding-bottom: 4px; padding-top: 4px; }
+td.title-button    { background-color: #E5E5E5; border-top: 0px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 0px solid #000000; color: #000000; font-size: 9pt; font-weight: normal; padding-right: 4px; text-align: right; }
+td.name            { background-color: #FFFFFF; border-top: 0px solid #000000; border-right: 0px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; color: #000000; font-size: 9pt; padding-left: 4px; padding-right: 4px; padding-bottom: 4px; padding-top: 4px; }
+a.name             { background-color: #FFFFFF; color: #000000; font-size: 8pt; }
+a.name:hover       { background-color: #FFFFFF; color: #000000; font-size: 8pt; text-decoration: underline; }
+td.name-button     { background-color: #FFFFFF; border-top: 0px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 0px solid #000000; color: #000000; font-size: 8pt; padding-right: 4px; text-align: right; }
+td.name-button-note{ background-color: #FFFFFF; background-image: url(../img/ovl_daynote.gif); background-repeat: no-repeat; background-position: top right; border-top: 0px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 0px solid #000000; color: #000000; font-size: 8pt; padding-right: 4px; text-align: right; }
+
+td.groupdelim      { background-color: #F6F6F6; border-top: 0px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; color: #000099; font-size: 8pt; font-style: italic; font-weight: bold; padding: 4px; }
+
+table.err          { background-color: #FFFFFF; border: 1px #333333 solid; border-collapse: collapse; border-spacing: 0; width: 100%; }
+td.err-header      { background-color: #C42140; border-top: 0px solid #000000; border-right: 0px solid #000000; border-bottom: 1px solid #BBBBBB; border-left: 0px solid #000000; color: #FFFFFF; font-size: 10pt; font-weight: normal; padding: 2px 4px 2px 4px; }
+td.err-body        { background-color: #FFFFFF; color: #333333; font-size: 8pt; padding-left: 4px; padding-right: 4px; padding-bottom: 4px; padding-top: 4px; vertical-align: top;  font-size: 10pt; font-weight: normal; }
+.emphasized        { font-weight: bold; }
+.modcap            { color: #000000; font-size: 8pt; font-weight: bold; }
+.module            { color: #777777; font-size: 10pt; font-weight: normal; }
+.classcap          { color: #000000; font-size: 8pt; font-weight: bold; }
+.class             { color: #009900; font-size: 8pt; font-weight: bold; }
+.funcap            { color: #000000; font-size: 8pt; font-weight: bold; }
+.function          { color: #000099; font-size: 10pt; font-weight: normal;}
+.errortext         { color: #000000; font-size: 10pt; font-weight: normal; }
+.erraction         { color: #990000; font-size: 10pt; font-weight: bold; }
+.loggedout         { color: #990000; font-size: 8pt; font-weight: normal; }
+.loggedin          { color: #333333; font-size: 8pt; font-weight: normal; }
+
+/* Dialog styles */
+table.dlg          { background-color: #FFFFFF; color: #000000; border: 1px #333333 solid; border-collapse: collapse; padding: 0px; width: 100%; }
+td.dlg-header      { background-color: #FF7200; border-top: 0px solid #000000; border-right: 0px solid #000000; border-bottom: 0px solid #666666; border-left: 0px solid #000000; color: #FFFFFF; font-size: 10pt; font-weight: normal; padding: 2px 4px 2px 4px; }
+td.dlg-body        { background-color: #FFFFFF; color: #333333; font-size: 9pt; padding-left: 4px; padding-right: 4px; padding-bottom: 4px; padding-top: 4px; vertical-align: top; }
+td.dlg-body2       { background-color: #FFFFFF; color: #333333; font-size: 9pt; font-weight: bold; padding-left: 4px; padding-right: 4px; padding-bottom: 4px; padding-top: 4px; vertical-align: top; }
+td.dlg-caption     { background-color: #01ADDD; color: #FFFFFF; font-size: 9pt; font-weight: normal; height: 20px; padding-left: 4px; padding-right: 4px; padding-bottom: 4px; padding-top: 4px; text-align: left; }
+td.dlg-caption-tt  { background-color: #01ADDD; color: #FFFFFF; font-size: 9pt; font-weight: normal; height: 20px; padding-left: 4px; padding-right: 4px; padding-bottom: 4px; padding-top: 4px; text-align: left; background-image: url(../img/ovl_tooltip.gif); background-repeat: no-repeat; background-position: top right; }
+td.dlg-caption-gray { background-color: #E4E1DC; color: #000000; font-size: 9pt; font-weight: normal; height: 20px; padding-left: 4px; padding-right: 4px; padding-bottom: 4px; padding-top: 4px; text-align: left; }
+td.dlg-caption-green { background-color: #65BF10; color: #FFFFFF; font-size: 9pt; font-weight: normal; height: 20px; padding-left: 4px; padding-right: 4px; padding-bottom: 4px; padding-top: 4px; text-align: left; }
+td.dlg-caption-red { background-color: #C42140; color: #FFFFFF; font-size: 9pt; font-weight: bold; height: 20px; padding-left: 4px; padding-right: 4px; padding-bottom: 4px; padding-top: 4px; text-align: left; }
+td.dlg-row1        { background-color: #F0F0F0; border-top: 0px solid #FFFFFF; border-right: 0px solid #000000; border-bottom: 1px solid #BBBBBB; border-left: 0px solid #000000; color: #333333; font-size: 8pt; padding-left: 4px; padding-right: 4px; padding-bottom: 6px; padding-top: 6px; text-align: left; vertical-align: top; }
+td.dlg-row2        { background-color: #F8F8F8; border-top: 0px solid #FFFFFF; border-right: 0px solid #000000; border-bottom: 1px solid #BBBBBB; border-left: 0px solid #000000; color: #333333; font-size: 8pt; padding-left: 4px; padding-right: 4px; padding-bottom: 6px; padding-top: 6px; text-align: left; vertical-align: top; }
+td.dlg-rowcell     { background-color: inherit; padding-left: 4px; padding-right: 4px; padding-bottom: 0px; padding-top: 0px; text-align: left; vertical-align: top; white-space: nowrap; }
+td.dlg-bodyff      { background-color: #FFFFFF; border-top: 1px solid #BBBBBB; border-right: 0px solid #000000; border-bottom: 0px solid #000000; border-left: 0px solid #000000; color: #333333; font-size: 8pt; padding-left: 4px; padding-right: 4px; padding-bottom: 4px; padding-top: 4px; text-align: left; vertical-align: top; }
+td.dlg-bodyffc     { background-color: #FFFFFF; border-top: 1px solid #BBBBBB; border-right: 0px solid #000000; border-bottom: 0px solid #000000; border-left: 0px solid #000000; color: #333333; font-size: 8pt; padding-left: 4px; padding-right: 4px; padding-bottom: 4px; padding-top: 4px; text-align: center; vertical-align: top; }
+td.dlg-bodyffb     { background-color: #083E7C; color: #FFFFFF; font-size: 8pt; font-weight: bold; height: 20px; padding-left: 4px; padding-right: 4px; padding-bottom: 4px; padding-top: 4px; text-align: left; }
+td.dlg-bodyffg     { background-color: #EEEEEE; border-top: 0px solid #BBBBBB; border-right: 0px solid #000000; border-bottom: 0px solid #000000; border-left: 0px solid #000000; color: #333333; font-size: 8pt; padding-left: 4px; padding-right: 4px; padding-bottom: 4px; padding-top: 4px; text-align: left; vertical-align: top; }
+td.dlg-help        { background-color: #FFFFFF; border-top: 1px solid #BBBBBB; border-right: 0px solid #000000; border-bottom: 0px solid #000000; border-left: 0px solid #000000; color: #333333; font-size: 8pt; font-weight: normal; padding-left: 4px; padding-right: 4px; padding-bottom: 4px; padding-top: 4px; text-align: left; }
+td.dlg-menu        { background-color: #E4E1DC; border-top: 1px solid #BBBBBB; border-right: 0px solid #000000; border-bottom: 0px solid #000000; border-left: 0px solid #000000; color: #000000; font-size: 10pt; font-weight: normal; height: 20px; padding-left: 4px; padding-right: 4px; padding-bottom: 4px; padding-top: 4px; text-align: right; }
+td.dlg-menu-top    { background-color: #E4E1DC; border-top: 0px solid #BBBBBB; border-right: 0px solid #000000; border-bottom: 1px solid #BBBBBB; border-left: 0px solid #000000; color: #000000; font-size: 10pt; font-weight: normal; height: 20px; padding-left: 4px; padding-right: 4px; padding-bottom: 4px; padding-top: 4px; text-align: right; }
+td.dlg-title       { color: #FFFFFF; font-size: 10pt; font-weight: bold; }
+td.dlg-frame-body  { font-size: 8pt; font-weight: normal; }
+td.dlg-frame-body, span.dlg  { font-size: 8pt; font-weight: normal; }
+
+td.config-row1     { background-color: #F0F0F0; border-top: 0px solid #FFFFFF; border-right: 0px solid #000000; border-bottom: 1px solid #BBBBBB; border-left: 0px solid #000000; color: #333333; font-size: 8pt; padding-left: 4px; padding-right: 4px; padding-bottom: 8px; padding-top: 8px; text-align: left; vertical-align: top; }
+td.config-row2     { background-color: #F8F8F8; border-top: 0px solid #FFFFFF; border-right: 0px solid #000000; border-bottom: 1px solid #BBBBBB; border-left: 0px solid #000000; color: #333333; font-size: 8pt; padding-left: 4px; padding-right: 4px; padding-bottom: 8px; padding-top: 8px; text-align: left; vertical-align: top; }
+.config-key        { font-size: 9pt; font-weight: normal; }
+.config-comment    { font-size: 8pt; font-weight: normal; font-style: italic; }
+.config-comment-red{ font-size: 8pt; font-weight: normal; color: #AA0000; }
+
+td.legend          { border-top: 0px solid #000000; border-right: 0px solid #000000; border-bottom: 0px solid #000000; border-left: 0px solid #000000; color: #000000; font-size: 8pt; height: 20px; text-align: left; }
+
+/* Frame in a dialog */
+fieldset           { border: 1px solid #999999; }
+fieldset legend    { color: #999999; font-size: 9pt; }
+
+/* Dialog styles */
+table.list         { background-color: #FFFFFF; border: 1px #333333 solid; border-collapse: collapse; border-spacing: 0; width: 98%; }
+td.listhead        { background-color: #01ADDD; color: #FFFFFF; font-size: 8pt; font-weight: bold; height: 20px; padding-left: 4px; padding-right: 4px; padding-bottom: 4px; padding-top: 4px; text-align: left; }
+td.list1           { background-color: #FFFFFF; border-bottom: 1px solid #BBBBBB; color: #222222; font-size: 8pt; padding-left: 4px; padding-right: 4px; padding-bottom: 4px; padding-top: 4px; text-align: left; vertical-align: middle; }
+td.list2           { background-color: #EEEEEE; border-bottom: 1px solid #BBBBBB; color: #222222; font-size: 8pt; padding-left: 4px; padding-right: 4px; padding-bottom: 4px; padding-top: 4px; text-align: left; vertical-align: middle; }
+tr.row0            { background-color: #FFFFFF; height: 20px;}
+tr.row1            { background-color: #EEEEEE; height: 20px; }
+hr.grey            { height: 1px; color: #990000; }
+
+/* Log Display */
+table.log          { background-color: #FFFFFF; border: 1px #333333 solid; border-collapse: collapse; width: 100%; }
+.logheader         { color: #000000; background-color: #E4E1DC; border-bottom: 1px #999999 solid; font-size: 8pt; font-weight: bold; height: 22px; padding: 4px; text-align: left; }
+.logrow0           { color: #000000; background-color: #FFFFFF; font-size: 8pt; height: 22px; padding: 4px; }
+.logrow1           { color: #000000; background-color: #EEEEEE; font-size: 8pt; height: 22px; padding: 4px; }
+
+table.stat         { border-collapse: collapse; }
+td.stat-header     { border-bottom: 1px solid #999999; color: #000000; font-weight: bold; padding: 4px; text-align: left; }
+td.stat-header-r   { border-bottom: 1px solid #999999; color: #000000; font-weight: bold; padding: 4px; text-align: right  ; }
+td.stat-caption    { border-bottom: 1px dotted #999999; color: #000000; font-weight: bold; padding: 4px; text-align: left; width: 150px; }
+td.stat-value      { border-bottom: 1px dotted #999999; color: #000099; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 20px; text-align: right; width: 100px; }
+td.stat-sum-caption{ border-top: 1px solid #999999; color: #000000; font-weight: bold; padding: 4px; text-align: left; width: 150px; }
+td.stat-sum-value  { border-top: 1px solid #999999; color: #000099; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 20px; text-align: right; width: 100px; }
+
+table.about        { background-color: #FFFFFF; background-image: url(../img/about.jpg); background-repeat: no-repeat; border: 1px solid #555555; border-collapse: collapse; margin: 0px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px; padding-top: 0px; height: 100%; width: 280px; }
+td.about-top       { font-size: 8pt; height: 210px; }
+td.about-bottom    { font-size: 8pt; padding-left: 20px; vertical-align: top; }
+a.about            { color: #555555; text-decoration: none;}
+a.about:hover      { color: #555555; text-decoration: underline;}
+
+/* Form related styles */
+form.form          { display: inline; font-size: 9pt; margin: 0px; }
+select.select      { border: 1px solid #999999; color: #000099; font-family: "Segoe UI", Arial, Helvetica, sans-serif; font-size: 8pt; }
+select.select option { border-bottom: 1px dotted #BBBBBB; padding: 2px 10px 2px 2px; }
+option.option      { border-bottom: 1px dotted #BBBBBB; padding: 2px;}
+input.text         { color: #000099; font-family: "Segoe UI", Arial, Helvetica, sans-serif; font-size: 9pt; font-weight: normal; padding: 4px; }
+textarea.text      { color: #000099; font-family: "Segoe UI", Arial, Helvetica, sans-serif; font-size: 9pt; font-weight: normal; text-align: left; padding: 4px; }
+.button            { -moz-box-shadow:inset 0px 1px 0px 0px #ffffff; -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff; box-shadow:inset 0px 1px 0px 0px #ffffff; background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #cecece) ); background:-moz-linear-gradient( center top, #ededed 5%, #cecece 100% ); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#cecece'); background-color:#ededed; -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; border:1px solid #dcdcdc; display:inline-block; color:#000000; font-family:"Segoe UI", Arial, Helvetica, sans-serif; font-size:8pt; font-weight:normal; padding:2px 14px; text-decoration:none; text-shadow:1px 1px 0px #ffffff; }
+.button:hover      { background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cecece), color-stop(1, #ededed) ); background:-moz-linear-gradient( center top, #cecece 5%, #ededed 100% ); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cecece', endColorstr='#ededed'); background-color:#dfdfdf; }
+.button:active     { position:relative; top:1px; }
+
+/* Footer copyright styles */
+.copyright         { font-family: "Segoe UI", Arial, Helvetica, sans-serif; color: #999999; font-size: 10px; }
+a.copyright        { color: #AAAAAA; text-decoration: none;}
+a.copyright:hover  { color: #AAAAAA; text-decoration: underline;}
+
+/* Tabbed dialog styles (based on code by Jonathan Hedley (http://jon.hedley.net/)) */
+.tab-container     { background: #E4E1DC; border-left: 1px solid #999999; border-top: 1px solid #999999; border-right: 1px solid #999999; border-bottom: 1px solid #999999; border: 0px; }
+.tabs              { background: #FFFFFF; border-bottom: 1px solid #999999; position: relative; height: 17px; margin: 0px; padding: 0px; /*	overflow: hidden; *//*	overflow: hidden; */ }
+.tabs li           { display: inline; position: relative; height: 24px; margin: 0px; padding: 0px; /*	overflow: hidden; *//*	overflow: hidden; */ }
+.tabs a            { color: #666666; background: #E4E1DC; border-left: 1px solid #999999; border-right: 1px solid #999999; border-top: 1px solid #999999; font-family: "Segoe UI", Helvetica, sans-serif; font-size: 11px; font-weight: bold; margin-left: 0px; /* Align left tab to container */ margin-right: 0px; /* Distance between tabs */ position: relative; padding-top: 4px; padding-left: 6px; padding-right: 6px; padding-bottom: 4px; text-decoration: none; }
+.tabs a:hover, .tabs a.tab-active { color: #333333; background: url("../img/tab_active.gif") repeat-x; border-left: 1px solid #999999; border-top: 2px solid #FFB300; border-right: 1px solid #999999; } 
+.tab-panes         { background: #FFFFFF; border-left: 1px solid #999999; border-top: 0px solid #999999; border-right: 1px solid #999999; border-bottom: 1px solid #999999; margin: 0px; }
+table.pane         { width: 100%; }
+td.pane            { background: #FFFFFF; padding: 4px; width: 100%; }
+
+/* Day colouring */
+table.month        { border: 1px #000000 solid; border-collapse: collapse; padding-left: 4px; padding-right: 4px; padding-bottom: 4px; padding-top: 4px; }
+td.month           { background-color: #01ADDD; border-top: 1px solid #000000; border-right: 0px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; color: #FFFFFF; font-size: 9pt; font-weight: normal; padding-left: 4px; padding-right: 14px; padding-bottom: 4px; padding-top: 4px; width: auto; }
+td.month-button    { background-color: #01ADDD; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 0px solid #000000; color: #FFFFFF; font-size: 9pt; font-weight: normal; padding-left: 4px; padding-right: 4px; padding-bottom: 4px; padding-top: 4px; }
+
+td.daynum          { background-color: #A5A5A5; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 0px solid #000000; color: #000000; font-size: 8pt; text-align: center; width: 20px; }
+td.remainder-title { background-image: url(../img/bg_remainder.gif); border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 0px solid #000000; color: #000000; font-size: 8pt; text-align: center; }
+td.remainder       { background-color: #E5E5E5; border-top: 0px solid #000000; border-right: 1px dotted #000000; border-bottom: 1px solid #000000; border-left: 0px solid #000000; color: #000000; font-size: 8pt; text-align: center; width: 20px;  padding-left: 4px; padding-right: 4px;}
+td.totals          { background-color: #FAFAFA; border-top: 0px solid #000000; border-right: 1px dotted #000000; border-bottom: 1px solid #000000; border-left: 0px solid #000000; color: #000000; font-size: 8pt; text-align: center; width: 20px; }
+td.weeknumber      { background-color: #AFEEEE; border-top: 0px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; color: #000000; font-size: 8pt; text-align: center; }
+td.weekday         { background-color: #E5E5E5; border-top: 0px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; color: #000000; font-size: 8pt; text-align: center; }
+td.weekday-note    { background-color: #E5E5E5; border-top: 0px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; color: #000000; font-size: 8pt; text-align: center; background-image: url(../img/ovl_daynote.gif); background-repeat: no-repeat; background-position: top right; }
+td.weekday-bday    { background-color: #E5E5E5; border-top: 0px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; color: #000000; font-size: 8pt; text-align: center; background-image: url(../img/ovl_birthday.gif); background-repeat: no-repeat; background-position: top right; }
+td.weekday-bdaynote{ background-color: #E5E5E5; border-top: 0px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; color: #000000; font-size: 8pt; text-align: center; background-image: url(../img/ovl_bdaynote.gif); background-repeat: no-repeat; background-position: top right; }
+td.day             { background-color: #FFFFFF; border-top: 0px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; color: #000000; font-size: 8pt; text-align: center; }
+td.day-note        { background-color: #FFFFFF; border-top: 0px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; color: #000000; font-size: 8pt; text-align: center; background-image: url(../img/ovl_daynote.gif); background-repeat: no-repeat; background-position: top right; }
+td.day-bday        { background-color: #FFFFFF; border-top: 0px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; color: #000000; font-size: 8pt; text-align: center; background-image: url(../img/ovl_birthday.gif); background-repeat: no-repeat; background-position: top right; }
+td.day-bdaynote    { background-color: #FFFFFF; border-top: 0px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; color: #000000; font-size: 8pt; text-align: center; background-image: url(../img/ovl_bdaynote.gif); background-repeat: no-repeat; background-position: top right; }
+td.day-sum-present { background-color: #FFFFFF; border-top: 0px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; color: #006600; font-size: 8pt; font-weight: bold; text-align: center; }
+td.day-sum-absent  { background-color: #FFFFFF; border-top: 0px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; color: #660000; font-size: 8pt; font-weight: bold; text-align: center; }
+td.day-sum-delta-negative { background-color: #FFFFFF; border-top: 0px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; color: #EE0000; font-size: 8pt; font-weight: bold; text-align: center;}
+td.day-sum-delta-positive { background-color: #FFFFFF; border-top: 0px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; color: #00AA00; font-size: 8pt; font-weight: bold; text-align: center;}
+td.day-day-absent  { background-color: #FFFFFF; border-top: 0px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; color: #660000; font-size: 8pt; text-align: center; }
+
+table.year         { padding: 0px; border-collapse: collapse; }
+td.year            { background-color: #01ADDD; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; color: #FFFFFF; font-size: 12px; font-weight: bold; padding-left: 4px; padding-right: 14px; padding-bottom: 4px; padding-top: 4px; width: auto; }
+td.yweekday        { background-color: #E5E5E5; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 0px solid #000000; color: #000000; font-size: 8pt; text-align: center; width: 20px;}
+td.yweekday-wend   { background-color: #FFFFCC; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 0px solid #000000; color: #000000; font-size: 8pt; text-align: center; width: 20px;}
+td.ymonth          { background-color: #FFFFFF; border-top: 0px solid #000000; border-right: 0px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; color: #000000; font-size: 8pt; padding-left: 4px; padding-right: 4px; padding-bottom: 4px; padding-top: 4px; vertical-align: middle; background-color: #E5E5E5; font-weight: bold; }
+td.ymonthb         { background-color: #FFFFFF; border-top: 0px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 0px solid #000000; color: #000000; font-size: 8pt; padding-left: 4px; padding-right: 4px; padding-bottom: 4px; padding-top: 4px; vertical-align: middle; background-color: #E5E5E5; font-weight: bold; }
+td.ydaytop         { background-color: #FFFFFF; border-top: 0px solid #000000; border-right: 1px solid #000000; border-bottom: 0px solid #000000; border-left: 0px solid #000000; color: #000000; font-size: 8pt; height: 14px; text-align: center; }
+td.ydaymid         { background-color: #FFFFFF; border-top: 0px solid #000000; border-right: 1px solid #000000; border-bottom: 0px solid #000000; border-left: 0px solid #000000; color: #000000; font-size: 8pt; height: 20px; text-align: center; }
+td.ydaybot         { background-color: #FFFFFF; border-top: 0px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 0px solid #000000; color: #AAAAAA; font-size: 8pt; height: 14px; text-align: center; font-weight: bold; }
+td.yndaytop        { background-color: #AAAAAA; border-top: 0px solid #000000; border-right: 1px solid #000000; border-bottom: 0px solid #000000; border-left: 0px solid #000000; color: #000000; font-size: 8pt; text-align: center; }
+td.yndaymid        { background-color: #AAAAAA; border-top: 0px solid #000000; border-right: 1px solid #000000; border-bottom: 0px solid #000000; border-left: 0px solid #000000; color: #000000; font-size: 8pt; text-align: center; }
+td.yndaybot        { background-color: #AAAAAA; border-top: 0px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 0px solid #000000; color: #000000; font-size: 8pt; text-align: center; font-weight: bold; }
+
+/* jQuery Tooltip */
+.ui-tooltip, .arrow:after { background: #01ADDD; border: 1px solid #FFFFFF; }
+.ui-tooltip { padding: 6px 12px; color: #FFFFFF; border-radius: 0px; font: normal 11px "Segoe UI", Sans-Serif; box-shadow: 0 0 7px black; }
+.arrow { width: 70px; height: 16px; overflow: hidden; position: absolute; left: 50%; margin-left: -35px; bottom: -16px; }
+.arrow.top { top: -16px; bottom: auto; }
+.arrow.left { left: 20%; }
+.arrow:after { content: ""; position: absolute; left: 20px; top: -20px; width: 25px; height: 25px; box-shadow: 6px 5px 9px -9px black; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); tranform: rotate(45deg); }
+.arrow.top:after { bottom: -20px; top: auto; }
+
+/* jQuery Tipsy Tooltip */
+.tipsy { font-size: 10px; position: absolute; padding: 5px; z-index: 100000; }
+.tipsy-inner { background-color: #F7F7F7; color: #000000; padding: 2px; text-align: left; max-width: 300px; }
+/* Rounded corners */
+.tipsy-inner { border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border: 1px solid #666666; }
+/* Uncomment for shadow */
+.tipsy-inner { box-shadow: 0 0 5px #000000; -webkit-box-shadow: 0 0 5px #000000; -moz-box-shadow: 0 0 5px #000000; }
+/* Rules to colour arrows */
+.tipsy-arrow { position: absolute; width: 0; height: 0; line-height: 0; border: 5px dashed #000; }
+.tipsy-arrow-n { border-bottom-color: #FF0000; }
+.tipsy-arrow-s { border-top-color: #FF0000; }
+.tipsy-arrow-e { border-left-color: #FF0000; }
+.tipsy-arrow-w { border-right-color: #FF0000; }
+.tipsy-n .tipsy-arrow { top: 0px; left: 50%; margin-left: -5px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent; }
+.tipsy-nw .tipsy-arrow { top: 0; left: 10px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent;}
+.tipsy-ne .tipsy-arrow { top: 0; right: 10px; border-bottom-style: solid; border-top: none;  border-left-color: transparent; border-right-color: transparent;}
+.tipsy-s .tipsy-arrow { bottom: 0; left: 50%; margin-left: -5px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+.tipsy-sw .tipsy-arrow { bottom: 0; left: 10px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+.tipsy-se .tipsy-arrow { bottom: 0; right: 10px; border-top-style: solid; border-bottom: none; border-left-color: transparent; border-right-color: transparent; }
+.tipsy-e .tipsy-arrow { right: 0; top: 50%; margin-top: -5px; border-left-style: solid; border-right: none; border-top-color: transparent; border-bottom-color: transparent; }
+.tipsy-w .tipsy-arrow { left: 0; top: 50%; margin-top: -5px; border-right-style: solid; border-left: none; border-top-color: transparent; border-bottom-color: transparent; }
+/* Tooltip styles */
+div.tt-caption { background-color: #E4E1DC; color: #000000; font-size: 8pt; font-weight: bold; padding: 4px; text-align: left; }
+div.tt-body { background-color: #FFFFFF; color: #000099; font-size: 8pt; padding: 4px; text-align: left; }

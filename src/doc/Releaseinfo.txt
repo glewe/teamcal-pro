@@ -1,0 +1,2578 @@
+==============================================================================
+TEAMCAL PRO RELEASE INFO
+==============================================================================
+
+------------------------------------------------------------------------------
+[3.6.020]
+
+DATE
+2016-04-04
+
+BUGFIXES
+
+https://georgelewe.atlassian.net/browse/TCP-139
+Global Daynote edit permission
+
+https://georgelewe.atlassian.net/browse/TCP-140
+German Umlauts problem
+
+
+------------------------------------------------------------------------------
+[3.6.019]
+
+DATE
+2015-05-29
+
+BUGFIXES
+
+https://georgelewe.atlassian.net/browse/TCP-137
+Create absence fails
+
+https://georgelewe.atlassian.net/browse/TCP-136
+Password rules not working
+
+https://georgelewe.atlassian.net/browse/TCP-135
+Duplicate absences in user profile
+
+https://georgelewe.atlassian.net/browse/TCP-133
+Statistics custom period within one month
+
+https://georgelewe.atlassian.net/browse/TCP-132
+Days in period calculation for statistics
+
+
+------------------------------------------------------------------------------
+[3.6.018]
+
+DATE
+2015-03-07
+
+BUGFIXES
+
+https://georgelewe.atlassian.net/browse/TCP-131
+Sat/Sun business day coloring
+
+https://georgelewe.atlassian.net/browse/TCP-129
+Special character sort
+
+https://georgelewe.atlassian.net/browse/TCP-128
+Sample data missing column
+
+https://georgelewe.atlassian.net/browse/TCP-119
+Today's background not transparent
+
+IMPROVEMENTS
+
+https://georgelewe.atlassian.net/browse/TCP-130
+Nav buttons in main calendar
+
+https://georgelewe.atlassian.net/browse/TCP-125
+Absence count to only show valid absence types
+
+https://georgelewe.atlassian.net/browse/TCP-123
+Login redirect to target page
+
+https://georgelewe.atlassian.net/browse/TCP-122
+Negative remainder values for individual allowances
+
+
+------------------------------------------------------------------------------
+[3.6.017]
+
+DATE
+2015-02-09
+
+BUGFIXES
+
+https://georgelewe.atlassian.net/browse/TCP-117
+Faktor and Allowance values 0 not saved
+
+https://georgelewe.atlassian.net/browse/TCP-116
+Confidential absence types in Year Calendar
+
+IMPROVEMENTS
+
+https://georgelewe.atlassian.net/browse/TCP-121
+Remainder Column not showing if default allowance is 0
+
+https://georgelewe.atlassian.net/browse/TCP-120
+Selectable application logo
+
+https://georgelewe.atlassian.net/browse/TCP-119
+Allow transparent absence type background
+
+https://georgelewe.atlassian.net/browse/TCP-118
+Put findAllByMonthUser() outside the loop
+
+
+------------------------------------------------------------------------------
+[3.6.016]
+
+DATE
+2015-01-09
+
+BUGFIXES
+
+Group update did not catch empty group name. The radio box processing needed a 
+code fix.
+
+https://georgelewe.atlassian.net/browse/TCP-113
+Managers cannot edit other manager's calendars or profiles
+
+IMPROVEMENTS
+
+Code improvements in
+- userimport.php
+- csv-model.php
+
+Typo corrections in english language file
+
+https://georgelewe.atlassian.net/browse/TCP-114
+Optional Date Range Input
+
+https://georgelewe.atlassian.net/browse/TCP-115
+Admin allowance only
+
+
+------------------------------------------------------------------------------
+[3.6.015]
+
+DATE
+2014-11-24
+
+BUGFIXES
+
+Fixed last_pw_change() was using a wrong date/time format
+
+Replaced obsolete $HTTP_POST_FILES with $_FILES in userimport.php
+
+Fixed catching NULL values for birthday and last login values in
+user_model.
+
+IMPROVEMENTS
+
+https://georgelewe.atlassian.net/browse/TCP-110
+Pro-Rata Entitlement
+
+https://georgelewe.atlassian.net/browse/TCP-111
+Week numbers in Edit mode
+
+https://georgelewe.atlassian.net/browse/TCP-112
+Management hierarchy
+
+
+
+------------------------------------------------------------------------------
+[3.6.014]
+
+DATE
+2014-09-15
+
+BUGFIXES
+
+Allowance check was not checking user type Assistant
+
+https://georgelewe.atlassian.net/browse/TCP-88
+editprofile.php - "Show in other groups" - not working
+
+https://georgelewe.atlassian.net/browse/TCP-89
+UTF8 characters destroyed in database
+
+Fixed last_pw_change() was using a wrong date/time format
+
+Replaced obsolete $HTTP_POST_FILES with $_FILES in userimport.php
+
+IMPROVEMENTS
+
+https://georgelewe.atlassian.net/browse/TCP-106
+Adjustments to Upgradeinfo.txt
+
+https://georgelewe.atlassian.net/browse/TCP-107
+Set size to absencecount icons
+
+
+------------------------------------------------------------------------------
+[3.6.013]
+
+DATE
+2014-07-31
+
+BUGFIXES
+
+https://georgelewe.atlassian.net/browse/TCP-105
+Setting user type problem
+
+Language file fixes
+
+https://georgelewe.atlassian.net/browse/TCP-102
+SQL error on permission creation
+
+Remainder/Totals count bug for half day absences
+
+------------------------------------------------------------------------------
+[3.6.012]
+
+DATE
+2014-02-22
+
+NEW FEATURES
+
+https://georgelewe.atlassian.net/browse/TCP-100
+Show region holidays per user
+
+https://georgelewe.atlassian.net/browse/TCP-99
+Import iCal into existing region
+
+Cleaned up the confirmation and error messages
+
+BUGFIXES
+
+https://georgelewe.atlassian.net/browse/TCP-98
+Month selection not retained on subsequent pages
+
+https://georgelewe.atlassian.net/browse/TCP-95
+Timezone fix
+
+https://georgelewe.atlassian.net/browse/TCP-93
+Announcement page redirect in index.php
+
+https://georgelewe.atlassian.net/browse/TCP-92
+Absence count was wrong in profile dialog
+
+Missing config model in upload.php
+
+------------------------------------------------------------------------------
+[3.6.011]
+
+DATE
+2014-01-18
+
+BUGFIXES
+
+https://georgelewe.atlassian.net/browse/TCP-67
+Export log entries
+
+https://georgelewe.atlassian.net/browse/TCP-71
+Adding SQL_BIG_SELECT parameter to database session
+
+https://georgelewe.atlassian.net/browse/TCP-76
+Absence counts in profile date switching
+
+https://georgelewe.atlassian.net/browse/TCP-77
+Legend missing character display
+
+https://georgelewe.atlassian.net/browse/TCP-82
+System log emtpy
+
+https://georgelewe.atlassian.net/browse/TCP-83
+Editprofile group memberships
+
+https://georgelewe.atlassian.net/browse/TCP-84
+Removed last comma in mail distribution list
+
+https://georgelewe.atlassian.net/browse/TCP-86
+Basic absence type in empty.sql
+
+https://georgelewe.atlassian.net/browse/TCP-87
+Groupassignment page change to support dots in usernames
+
+
+NEW FEATURES
+
+Periods (.) allowed in usernames
+
+Tabbed dialog on database maintenance page
+
+https://georgelewe.atlassian.net/browse/TCP-63
+Database archiving. User record archiving
+
+https://georgelewe.atlassian.net/browse/TCP-63
+Selective log entry display
+
+https://georgelewe.atlassian.net/browse/TCP-64
+Declination apply to managers
+
+https://georgelewe.atlassian.net/browse/TCP-70
+Multiple selection lists for absence types and users
+
+
+
+------------------------------------------------------------------------------
+[3.6.010]
+
+DATE
+2013-11-13
+
+BUGFIX
+
+https://georgelewe.atlassian.net/browse/TCP-65
+Missing field in sample database
+
+------------------------------------------------------------------------------
+[3.6.009]
+
+DATE
+2013-11-09
+
+NEW FEATURES
+
+https://georgelewe.atlassian.net/browse/TCP-61
+Additional Declination Period Opportunity
+
+https://georgelewe.atlassian.net/browse/TCP-60
+Option to specify Avatar File Size
+
+https://georgelewe.atlassian.net/browse/TCP-58
+Combine absence allowance
+
+https://georgelewe.atlassian.net/browse/TCP-55
+User filter/search in calendar view
+
+https://georgelewe.atlassian.net/browse/TCP-50
+No notifications for changes in the past
+
+
+------------------------------------------------------------------------------
+[3.6.008]
+
+DATE
+2013-09-15
+
+BUG FIXES
+
+https://georgelewe.atlassian.net/browse/TCP-48
+Problem with e-mails to Group or all
+
+https://georgelewe.atlassian.net/browse/TCP-49
+Daynote popups do not always show
+
+NEW FEATURES
+
+https://georgelewe.atlassian.net/browse/TCP-47
+Global daynotes in Editcalendar
+
+
+------------------------------------------------------------------------------
+[3.6.007]
+
+DATE
+2013-07-14
+
+BUG FIXES
+
+https://georgelewe.atlassian.net/browse/TCP-40
+HTML table in notification e-mail
+
+https://georgelewe.atlassian.net/browse/TCP-43
+Manager Only Absences can't be selected by managers!
+
+https://georgelewe.atlassian.net/browse/TCP-44
+getfiles and strtolower on file names
+
+https://georgelewe.atlassian.net/browse/TCP-45
+Hidden absences cause declination message to regular users
+
+
+------------------------------------------------------------------------------
+[3.6.006]
+
+DATE
+2013-07-07
+
+BUG FIXES
+
+https://georgelewe.atlassian.net/browse/TCP-20
+E-Mail to group manager is not sent
+
+https://georgelewe.atlassian.net/browse/TCP-33
+Presence per user stats and Manager email
+
+https://georgelewe.atlassian.net/browse/TCP-34
+Calendar shows icons for absences that are not applicable
+
+IMPROVEMENTS
+
+https://georgelewe.atlassian.net/browse/TCP-31
+Hide management only absence types
+
+https://georgelewe.atlassian.net/browse/TCP-32
+Option to only show active users in Statistics
+
+https://georgelewe.atlassian.net/browse/TCP-35
+DIRECTOR Permissions Problem?
+
+https://georgelewe.atlassian.net/browse/TCP-36
+New user type "Assistant"
+
+https://georgelewe.atlassian.net/browse/TCP-40
+HTML table in notification e-mail
+
+
+------------------------------------------------------------------------------
+[3.6.005]
+
+DATE
+2013-05-26
+
+BUGFIX
+01 Manager Only Absences
+   Manager only absence types were shown to regular users as disabled radio
+   boxes. Submitting that form tho would not return the values to the script.
+   Manager only absence types will now be shown are regular radio boxes but
+   will be checked in the declination routine.
+
+NEW FEATURES
+01 Log Language
+   The log language can now be individually set in the configuration.
+
+
+------------------------------------------------------------------------------
+[3.6.004]
+
+DATE
+2013-05-02
+
+BUGFIX
+01 TCP-19: Editcalendar.php error
+   Under certain circumstance the log entry contained a wrong username for the
+   user of the calendar that was edited.
+
+02 TCP-22: Permissions page, Absences page
+   The buttons at the bottom of the page were not working.
+   
+03 TCP-20: Wrong date in declination messages
+   Declination messages and e-mails had the wrong date in them (day+1). Fixed
+
+04 TCP-20: Request reason not in notification e-mails
+   The request reason given by a user was not put into the notification emails.
+   Fixed.
+   
+05 TCP-23: Editprofile link in calendar
+   The editprofile link of the names in the calendar was incorrectly checked
+   against the permissions of the logged in user. Fixed.
+
+IMPROVEMENTS
+01 Statistics library
+   The code of the statistics library has been streamlined. The background of
+   the bars is not an image anymore but a gradient CSS styles.
+
+------------------------------------------------------------------------------
+[3.6.003]
+
+DATE
+2013-04-22
+
+BUGFIX
+01 TCP-21: Editcalendar.php error
+   An error in editcalendar.php prevented the script from functioning. This
+   critical bug required and instant bugfix release.
+
+------------------------------------------------------------------------------
+[3.6.002]
+
+DATE
+2013-04-20
+
+IMPROVEMENTS
+01 Default Language
+   The admin can now set the default language so it defaults to this choice
+   instead of defaulting to English. There is now language drop down list
+   in the options bar anymore. Every user can set his individual language 
+   in his profile.
+   
+02 Status bar integration
+   The status bar was removed. It only served the purpose to display login
+   information. Too much wasted vertical real estate for just that info.
+   This information is now displayed by a user icon left to the menu with 
+   a tool tip. Also, the announcement icon willshow up there when there
+   are some.
+   
+03 Own page for Calendar
+   The calendar is now a separate page. Before, it was included from the index
+   page. This offers better possibilities to react to the displayed page,
+   e.g. in the options bar.
+   
+04 Options bar
+   The options bar is now used for most of the page related buttons and
+   list boxes. Previsously, these object were on the page itself which made
+   the options bar's purpose kind of void.
+
+NEW FEATURES
+01 Public user manual
+   The local help files are gone. With the launch of the TeamCal Pro community
+   site at https://georgelewe.atlassian.net the user manual is now publicly
+   available there in a Confluence Wiki. The context-sensitive help points to 
+   the corresponding pages of the public standard manual in English.
+   The community pages now allow to create translations of the manual. You
+   can be part of the editors. If a translation exists, you can point TeamCal
+   Pro to such a translation instead. Linking to a translation will not be
+   context-sensitive though since manual structure and page names my differ.
+
+
+------------------------------------------------------------------------------
+[3.6.001]
+
+DATE
+2013-04-13
+
+BUGFIXES
+01 Allowance deletion when user is deleted
+   Fixed a bug that allowance were not deleted when the user was removed.
+   
+02 Groupname changes
+   Group name changes in the admin group page were not saved correctly in
+   the database. Non-alphanumeric characters were stripped but the orginal
+   value from the form was saved. Fixed.
+   
+03 Hidden users in year calendar
+   Fixed a bug that hidden users were shown in the year calendar
+   
+IMPROVEMENTS
+01 "Clear Holiday" row in monthedit
+   Holidays could only be cleared for a whole month. I added a new row in
+   the editmonth dialog with a radiobox to clear each single holiday.
+   
+02 Welcome Text HTML tags
+   Only < i > and < b > HTML tags are now allowed in the welcome title and message.
+   All other tags will be stripped. Line breaks are automatically translated
+   into < br > tags.
+   
+03 Consistent username format check
+   Usernames can only contain alphanumeric characters. This was not checked
+   consistently in addprofile, register and CSV import.
+   
+04 Mail from and replyto info
+   The mail feature now adds the full name to the from address and identifies
+   the true sender in the reply to address.
+   
+05 Logout language
+   The logout now reads the last set language and displays the appropriate
+   calendar or home page.
+   
+06 Userlist sort by last login
+   Added a request by user heart1010 to provide a userlist sort by last login.
+   
+07 Horizontal scrollbar
+   There was a horizontal scrollbar at the bottom of the browser window caused
+   by incorrect div metrics. Now gone.
+
+
+------------------------------------------------------------------------------
+[3.6.000]
+
+DATE
+2013-04-03
+
+BUGFIXES
+01 Avatars not shown
+   I introduced a bug that caused the avatars not to be shown anymore. Fixed.
+   
+02 Calendar sort by name
+   I introduced a bug that caused the sort-by-name not to work anymore. Fixed.
+
+
+IMPROVEMENTS
+01 Unlimited absence types
+   It is now possible to create unlimited absence types. The admin page for
+   absence types has been completely redone for this and also absence types
+   are stored differently in the database.The absence-group table, allowance
+   table and template table also had to be changed.
+   
+02 Radio buttons in Editcalendar
+   Only one absence type per day can be set. Therefore it made sense to
+   present absences as radio buttons instead of checkboxes in the editcalendar
+   dialog.
+   
+03 Current absence in Editcalendar
+   A row has been added to the editcalendar dialog showing the current absence
+   of the corresponding day.
+   
+04 Charset UTF-8
+   The charsets were not consistent, leading to unexpected results when special
+   characters were submitted on the config page. Charset now set to UTF-8.
+   
+05 SMTP mail
+   Using SMTP mail send was possible but not used all along TCP. I changed that
+   now so all mail sending activities are either PHP mail or SMTP. The SMTP
+   settings now allow to chose TLS/SSL protocol.
+
+06 File structure
+   Changed the file structure to more clearly distinguish between models and
+   helpers.
+   
+07 Popup window => Full page
+   The following pages are not a popup windows anymore. This saves the load time
+   for a new browser window and the mimic of reloading the referrer. It is a 
+   more common way after all.
+   - Login page
+   - Message center
+   
+08 Tabbed dialog on Configuration page
+   The configuration page now has a tabbed dialog
+   
+09 Selectable jQuery theme
+   jQuery offers themes as well. You can select a global theme for the jQuery
+   objects.
+   
+10 HTML titles
+   Each page now shows an appropriate HTML title in the browser tab.
+   
+11 New Absence Page
+   The absence management page has been completely redone and contains more
+   details for setting them up.
+   
+12 Tabbed dialog on Regions page
+   The regions page now has a tabbed dialog
+   
+13 Declination Page
+   The declination page has been redesigned
+   
+14 Fast Edit
+   Fast Edit is great new feature based on an idea by TeamCal Pro user Heart1010.
+   It can be switched on in the configuration. It will display an additional 
+   row at the bottom of the calendar view with buttons that enable listboxes 
+   for each user on the day. It is then quickly possible to change an absence 
+   right in the calendar view. You can do that for that several absences before 
+   you apply those changes. Fast Edit will not perform any declination checks
+   tho. It is meant for managers so they can quickly edit single absences.
+   
+   
+------------------------------------------------------------------------------
+[3.5.002]
+
+DATE
+2013-03-10
+
+IMPROVEMENTS
+01 DIV blocks
+   The main page layout is now based on <div> tags. Saves a lot of tables and 
+   makes the whole thing a bit faster.
+   
+02 Log page
+   The Log Page uses a tabbed dialog now. Also, a button to clear the log has
+   been added.
+   
+BUGFIX
+01 Dialog error messages
+   Fixed the error messages in dialogs. They were showing the application
+   header and menu.
+   
+02 Popup dialog
+   Fixed the popup dialog that was not showing anymore for popup announcements
+   
+03 Edit Profile
+   Fixed that the group memberships were deleted when users with no group
+   membership permissions updated the profile.
+   
+04 Announcement Popup
+   Fixed bug that single announcements were not deleted from popup dialog.
+   
+05 Absence Management
+   Fixed a bug in abesences.php. Absence style updates were not saved correctly.
+   
+06 Holidays Management
+   Fixed a bug in holidays.php. Holiday style updates were not saved correctly.
+   
+   
+------------------------------------------------------------------------------
+[3.5.001]
+
+DATE
+2013-02-20
+
+NEW FEATURES
+01 Show in other groups
+   User profiles can be configured so that the calendar is shown in other group
+   displays, even if not a member. Makes sense if his absences are relevant
+   for the other group.
+
+02 jQuery Tool Tips
+   Added jQuery tool tips now used instead of the browser built ins
+   
+IMPROVEMENTS
+01 jQuery Color Picker
+   Replaced the aged color picker with one for jQuery
+   
+02 jQuery Date Picker
+   Replaced the aged date picker with one for jQuery
+   
+03 New Button CSS
+   Used a more modern and much nicer CSS for all buttons
+   
+04 Declination Page
+   Redesigned the declination page
+   
+BUGFIXES
+01 Userimport permission
+   Fixed a coding error in the permission check for userimport.php
+   
+02 Language
+   Fixed a missing LANG entry
+   
+03 Statistics permission
+   Fixed a bug with permissions in the statistics page
+   
+04 Add User Dialog
+   Added some missing fields in the add user dialog
+   
+05 Remainder Collapse Button
+   Fixed the wrong link for the remainder collapse button
+   
+   
+
+
+------------------------------------------------------------------------------
+[3.5.000]
+
+DATE
+2013-02-16
+
+BUGFIXES
+01 Groupfilter bug
+   Fixed a bug processing groupfilter=All selection in calendar view
+   
+IMPROVEMENTS
+01 Upload dialog
+   For security reasons the rename input field has been removed to avoid code
+   injection. TeamCal Pro will create random names for uplaoded files. The
+   selection lists will show icons though so you can identify your images.
+   
+02 Announcement dialog
+   The announcement dialog has been made nicer. There also is a button now
+   to confirm all your announcements in one shot.
+   
+03 Declination dialog
+   Declination notifications can now be set for all declination events in
+   general.
+   
+04 Notfication eMail template
+   I finally changed the content template of the notification email for
+   absence changes. It now shows an ASCII based table that better shows
+   what absences have changed.
+   
+04 System Log
+   The system log page now combines the log itself and the log level settings.
+   
+05 Environment Page
+   The language values are now sorted ascending by ther array key.
+
+ADDITIONS
+01 Permission Schemes
+   By far the biggest change applied to a new release. The permission system has 
+   been completely redone. So-called permission schemes are now available in 
+   which you can allow or disallow each feature for administrators, directors, 
+   managers, users and the public. The authorization modes are gone.
+
+02 Welcome Page Image
+   You can add an image to your welcome message
+
+03 jQuery CDN
+   TeamCal Pro now supports to pull jQuery from a CDN
+   
+04 Google Analytics
+   TeamCal Pro now supports Google Analytics
+   
+05 webMeasure Integration
+   webMeasure is another free utility by Lewe.com. It is an online conversion
+   utility hosted on Lewe.com. TeamCal Pro now offers the option to add a link
+   to it in the Tools menu. 
+
+   
+------------------------------------------------------------------------------
+[3.4.003]
+
+DATE
+2012-12-06
+
+BUGFIXES
+01 About page styles
+   After moving the styles to the database the About page was not working
+   anymore. Fixed.
+   
+02 Environment page
+   The environment page did not array values correctly
+   
+03 Database maintenance
+   Fixed error when deleting orphaned announcements
+   
+04 Absence counts
+   Fixed a bug in the Absences tab of the user profile dialog
+
+IMPROVEMENTS
+01 Moved menu icons to style folder
+   The menu icons are now part of the themes folder(s). That way you can
+   change the menu icons per theme.
+   
+02 Removal of printDialogFrame()
+   Replaced the dialog frame table with fieldset tags. Leads to less function
+   calls and less html tables.
+   
+03 Edit Calendar
+   The EditCalendar routine has been majorly rewritten. Now the complete request
+   is checked first, all refusals are collected and only one message/mail is
+   displayed/sent at the end if anything was declined. This makes the routine
+   much faster and saves a lot of emails.
+   
+ADDITIONS
+01 Metro theme
+   Added a Windows 8 Metro like theme.
+   
+   
+------------------------------------------------------------------------------
+[3.4.002]
+
+DATE
+2012-11-25
+
+BUGFIXES
+01 User deletion error
+   When deleting a user, removal of the user announcements threw an error.
+   
+02 Installation page
+   Version info was not read correctly
+   
+03 Log page
+   Checkboxes were not checked correctly
+
+IMPROVEMENTS
+01 LDAP to Active Directory
+   Made to changed to support LDAP bind to Active Directory. Note, that you
+   have to change one line of code manually when connecting to Active Directory
+   in includes/tclogin.class.php, line 267.
+   
+02 Repeat header count
+   The header repetition was still not perfect, leading to a trailing header
+   when no more users to display. Changed the logic to avoid trailing header.
+   
+03 Speed optimizations
+   Thanks to input from Mark, TeamCal Pro received some effective speed
+   optimizations, especially for the calendar display and group assignments.
+
+04 Range input, Recurring input
+   Range and recurring input can now be opted to not mark non-business days.
+   
+05 Show remainders to directors
+   Directors can now see the remainder section
+   
+06 Approval needed absences cannot not be cancelled anymore
+   So far absences that require approval could not be selected. They could
+   still be unselected though. That does not seem logical. Absences that 
+   require approval can now neither be selected nor unselected. A corresponding
+   request will still send out a mail to the manager.
+
+07 Stylesheets in database
+   The stylesheets are now saved to the database and inserted into the HTML
+   from there. This saves file operations on the hard disk when you change
+   the configuration. The files tcpro.css and tcprint.css in the themes/.../css
+   folder are now obsolete. You can delete them. You can still edit your own
+   style changes in the file default.css there.   
+
+
+   
+------------------------------------------------------------------------------
+[3.4.001]
+
+DATE
+01.SEP.2012
+
+BUGFIXES
+01 W3C compatibility
+   Fixed some HTML compatibility syntax
+   
+02 Repeat header count
+   Repeat header count was still wrong. Missed the hidden calendar check.
+   
+03 Declination management
+   There were some errors on the declination admin page and the editcalendar
+   page due to obsolete PHP code. Had to change a few things to be clean.
+   
+
+------------------------------------------------------------------------------
+[3.4.000]
+
+DATE
+31.JUL.2012
+
+BUGFIXES
+01 LDAP bugfix
+   Applied the LDAP v3 patch (thanks to "Franz")
+   
+02 Repeat header count bugfix
+   Hidden users, even not displayed, were counted for the repeat header count.
+   Now fixed. (thanks to "Heart1010")
+
+03 Daynote fix
+   Fixed another spot where daynote displays are now HTML entity converted.
+   (thanks to "Franz")
+
+IMPROVEMENTS
+01 Database access performance
+   Database access is now static and cached (thanks to "Franz") 
+
+02 Include performance
+   Some of the includes of the config file needed to marked as "require_once"
+   (thanks to "Franz")
+   
+NEW FEATURES
+01 iCal region import
+   iCal files can now be imported as a region. This is very useful for school
+   holidays for example. (based on an idea from "Franz")
+   
+02 Merge regions
+   On the admin region page you can now merge regions, either with keeping or
+   with overwriting absences in the target region.
+
+03 Paging buttons in editmonth
+   The editmonth page had no paging buttons yet to go forward or backward
+   one month.
+
+
+------------------------------------------------------------------------------
+[3.3.010]
+
+DATE
+10.MAY.2012
+
+BUGFIXES
+01 Edit Calendar Regions
+   When paging forward or backward in the Edit Calendar dialog, the currently
+   selected region was not applied.
+   
+02 Absence symbol change
+   When changing the symbol of an absence type, the existing calendar templates
+   were not updated correctly.
+   
+03 Bug in .SQL files
+   There was a bug in both sample SQL files for the lat_login field. Now fixed.
+   
+04 Daynote fix
+   Daynote displays are now HTML entity converted. A bug noticed by Franz.
+   
+
+NEW
+01 Calender display paging
+   You can now enable paging for the calendar display by specifying how much
+   users shall be displayed on each page. This value can be set by the admin
+   on the configuration page. When paging is enabled, paging buttons will be
+   displayed below the calendar.
+
+02 SMTP mail sending
+   You can now configure Tcpro to use an external SMTP server to send emails.
+   This feature requires the PEAR mail package to be installed on the server
+   where you run Tcpro. Most hosters install it by default.
+   
+03 Saturday/Sunday as business day
+   You can now configure Tcpro to display Staturday and/or Sunday as a 
+   business day.
+
+------------------------------------------------------------------------------
+[3.3.009]
+
+DATE
+08.JUL.2011
+
+BUGFIXES
+01 Message Center
+   Fixed a bug in sending messages to single users. 
+
+02 Regions
+   Fixed a bug in the tcregion() class.
+
+03 Group filter
+   Fixed a bug reading the "All by group" filter
+
+04 User profile dialog
+   The Default Region drop down was not displayed when user themes were
+   disabled. Fixed.
+
+------------------------------------------------------------------------------
+[3.3.008]
+
+DATE
+11.MAY.2011
+
+BUGFIXES
+01 Absence Update
+   There was a bug in the absence management throwing an error on abesence
+   updates. 
+
+02 German language file
+   Fixed a syntax error in the German language file.
+
+
+------------------------------------------------------------------------------
+[3.3.007]
+
+DATE
+05.MAY.2011
+
+BUGFIXES
+01 LDAP access
+   Thanks to a patch from Franz Gregor the PHP warning messages were disabled
+   and the detection of an unreachable server introduced. 
+
+02 German language file
+   Added two language variables that I missed out (cal_recurring_workdays and
+   cal_recurring_weekend).
+
+03 Code injection vulnerabilities
+   Improper sanitization of user input caused code injection vulnerabilites in
+   files index.php, login.php, register.php and verify.php.
+
+04 Absence type symbol input validation (thanks to Matt for spotting)
+   Absence type symbols were not validated correctly upon adding or updating
+   absence types. This could cause an escape character to be stored in the 
+   database and made TCP unusable. Updates could cause inconsistencies in the
+   database.
+   
+
+------------------------------------------------------------------------------
+[3.3.006]
+
+DATE
+05.FEB.2011
+
+BUGFIXES
+01 Welcome Text
+   Added/stripped slashes when saving/reading the welcome message to/from the
+   database.
+
+02 Calendar display
+   The calendar display was not always initiated correctly. Instead the welcome
+   message was shown.
+   
+03 Statistics current year
+   The current year statistics page was not using the current year period, 
+   it was using the default allowance period instead.
+   
+
+------------------------------------------------------------------------------
+[3.3.005]
+
+DATE
+08.JAN.2011
+
+BUGFIXES
+01 Statistic Page
+   The statistics page had a bug. When logged in as a group manager there were
+   no entries shown in some of the diagrams.
+
+02 Options bar selection
+   Selections in the options bar below the menu were not interpreted correctly.
+   Instead the home page was displayed.
+
+CHANGES
+01 Own Groups Only
+   The group selection boxes in the Message and Editprofile dialog now reflect
+   the "own groups only" setting of the user.
+   
+02 "View Group Plus" Mode
+   A new registered mode was added: View Group Plus. It is the same as "View"
+   except that the user can only see his own groups.
+   
+   
+   
+------------------------------------------------------------------------------
+[3.3.004]
+
+DATE
+12.NOV.2010
+
+BUGFIXES
+01 Group Update
+   The group short name validation did not match the validation when adding a
+   group. Thus, the short name could change when updating the group.
+   
+02 Variable Initializations
+   On rare custom setups un-initialized variables caused error messages. Code
+   was added to clear/initialize those.
+   
+03 First Groupname in All-By-Group Display
+   The first group name was not displayed in the calendar in all-by-group mode.
+   
+04 Remainder Statistics
+   Fixed missing label
+
+05 Language entry
+   Adding a user profile is now confirmed with a message from the language file
+   
+06 Bug in Statistics
+   Managers couldn't see the graphs due to a bug in the code. Fixed in this
+   release.
+   
+07 Absence approval bug
+   When a user changed an already set absence to one that needs approval it was
+   accepted right away. This is now fixed. 
+
+CHANGES
+01 Announcement logging
+   Confirmation of announcements is now logged in the admin log. That way
+   administators can see who confirmed.
+   
+02 Mark Confidential Absences
+   There is now an option to have confidential absences shown as an "X" to
+   regular users. They cannot see the absence type.
+   
+03 Password Reset
+   The user list now has a button to reset a user's password. A password will
+   be generated and a mail will be sent to the affected user.
+
+04 Userlist Group Filter
+   The user list now has a group filter
+   
+05 Initial Homepage
+   The administrator can now configure the initial homepage shown after login
+   and logout. This can be a welcome message or the calendar display.
+
+------------------------------------------------------------------------------
+[3.3.003]
+
+DATE
+24.JUN.2010
+
+BUGFIXES
+01 Editcalendar
+   Manager-only absence types were still shown in the period list boxes.
+
+02 Editprofile
+   Authorization for the Privileges tab was not checked correctly.
+   
+03 Language (English and Deutsch)
+   Corrected cookie lifetime to be in seconds (not miliseconds)
+   
+04 Language (Deutsch)
+   Corrected admin_config_defperiod_xxx values.
+   
+05 Groups, Absences
+   Added addl. checks for form values getting back to the script.
+   
+06 Statistics
+   Removed an obsolete line of code that caused errors on some installations.
+
+CHANGES
+01 Statistics
+   So far, the statistics counted the absences independently from whether they
+   count as present or not. This was confusing in a way. Absence types that
+   count as present are now counted as present.
+   
+
+------------------------------------------------------------------------------
+[3.3.002]
+
+DATE
+16.APR.2010
+
+BUGFIXES
+01 Editmonth
+   Editmonth was not using the default region if no region was given as a 
+   REQUEST parameter.
+   
+02 Regions
+   When deleting or updating a region, the user options, config and month
+   templates were not updated accordingly.
+
+CHANGES
+01 Year Calendar Page
+   Launching Editmonth and Editcalendar from within the year calendar page was
+   opening a window that was too small. Changed width and height.
+   
+
+------------------------------------------------------------------------------
+[3.3.001]
+
+DATE
+16.APR.2010
+
+BUGFIXES
+01 Group Assignment Page
+   The column count was off in case of 8 or more groups.
+
+02 User Region
+   The edit calendar button now considers the users region if he has set one.
+   This suggestion came from 'robw'.
+   
+03 Installation Script
+   The installation script had an error in line 186 referring to an array as
+   string.
+   
+04 Horizontal Diagram
+   Fixed an HTML bug in the horizontal stats graph.
+   
+05 Calendar Style
+   Changed the border value of the table.month style in order to fix missing
+   borders on the right edge of the calendar.
+   
+CHANGES
+01 Remainder Statistics Current Year
+   Added a statistics page for the remainders of each user in the current year
+   This suggestion came from 'Harrung'.
+   
+02 Email and Error Messages in Calendar Edit
+   Only one error message is shown per calendar edit request (not per day
+   anymore as before). Also, each receiver gets only one email per calendar
+   edit request containing the accumulated request issues.
+   
+03 Security
+   Enhanced security for code injection. No included script can be accessed
+   directly anymore.
+   
+04 Confidential Absence Types
+   Absence types can now be marked as 'confidential'. These absence types are
+   not shown in the calendar to the public or to regular users if its not their
+   own absence.
+   This suggestion came from 'Easyspace'.
+   
+05 Default Allowance Period
+   The default period for which allowances and remainders are counted can now 
+   be set to a custom period. It was the current calendar year before. The
+   new setting can be found on the admin config page.
+   This suggestion came from 'Simon'.
+   
+06 JoomlaJack Removed
+   The JoomlaJack was removed. It only worked with an outdated Joomla release.
+   Joomla will not be supported anymore.
+
+
+------------------------------------------------------------------------------
+[3.2.004]
+
+DATE
+01.SEP.2009
+
+BUGFIXES
+01 Incorrect data in empty.sql
+   Loading the empty database lead to an index error for the config table due
+   to a duplicate index number was the reason.
+
+02 CSV Import
+   The CSV Import did not work due to instantiating the wrong class in
+   userimport.php.
+   
+03 CSV and XML Export
+   The CSV and XML export from the database maintenance page did not work
+   due to not including the appropriate classes in exportdata.php.
+   
+04 Renaming Group
+   When renaming a group the absence type assignments were not updated.
+   
+05 Director Rights
+   Enabled the features sendMessage, viewAnnouncements, viewCalendar,
+   viewProfile and viewYearCalendar for "directors" independently from
+   authorization mode.
+   
+CHANGES
+01 Removed HTMLHelp (CHM) and eBook (EXE) help file due to obsolete format
+
+
+------------------------------------------------------------------------------
+[3.2.003]
+
+DATE
+06.MAR.2009
+
+CHANGES
+01 LDAP login for admin
+   The admin user is always logged in against the TCPRO database. This is
+   to make sure an admin login is always possible even if LDAP is down.
+
+02 Statistic Absence Type Filter
+   On the statistics page it can now also be filtered by absence type.
+
+BUGFIXES
+01 User Import
+   The user import dialog would close on the user due to authorization. This
+   was a bug in the CSV handler class. Fixed in this version.
+
+02 Calendar pop up in User Profile
+   The calendar pop up in the User Profile dialog didn't work. Fixed in this
+   version.
+   
+03 Week numbers
+   Week number were computed incorrectly under certain circumstances. Fixed
+   in this version.
+   
+
+------------------------------------------------------------------------------
+[3.2.002]
+
+DATE
+27.OCT.2008
+
+BUGFIXES
+01 Update/Create Region Month Template
+   In certain circumstances updating the region record lead to an error message
+   when inserting the record (duplicate key).
+   
+02 Showmonth HTML Code
+   Under certain circumstances the showmonth HTML code was not correct.
+   
+03 Statistics Page
+   Under certain circumstances the statistics page threw an error when inserting
+   a new month record. 
+
+
+------------------------------------------------------------------------------
+[3.2.001]
+
+DATE
+05.OCT.2008
+
+BUGFIXES
+01 Remove Manager Only Absences
+   There was a bug in the new feature of manager only absence types. This could
+   be set by the manager but not removed afterwards.
+   
+02 Default Group Filter, Default Region Filter
+   The default group and region filter was not applied to the public viewer
+   (users not logged in).
+
+03 Some code streamlining
+   There were some non-critical code bugs that were fixed.
+
+
+------------------------------------------------------------------------------
+[3.2.000]
+
+DATE
+04.SEP.2008
+
+BUGFIXES
+01 Birthday Marker Display
+   The birthday marker was not displayed anymore due to an internal date string
+   format change. Fixed.
+   
+02 Summary Font Color
+   When creating the style sheet (theme) the summary font color for business
+   days was not set correctly. Fixed.
+
+03 Security Updates
+   Protected the $CONF variable from code intrusion by unsetting it first before
+   filling it from config.tcpro.php
+   
+04 CSS Error on Holiday Changes
+   Whenever a Holiday was added, updated or deleted the appropriate changes to
+   the CSS files lead to an error in functions.tcpro.php. This was fixed.
+
+CHANGES
+01 Region Support
+   TeamCal Pro now support several base calendars organized by regions. You can
+   create individual regions and a base calendar template for each of them. The
+   administrator can set a default region to be used for the calendar display.
+   Each user can overwrite this by his own default region. Also, in the calendar
+   display you can switch between regions.
+   
+02 Absence access for managers only
+   Absence types can now be marked as "manager only". Only managers can set/unset
+   these absences for themselves and their team members. Team members can still
+   see them in their calendar but the check boxes are disabled.
+   
+03 Minimum Present, Maximum Absent Threshold
+   A minimum present and maximum absent value can be set per group. An addl.
+   switch will cause TeamCal Pro to check these values when group members
+   request absences. In case the configured thresholds would be breached the
+   request is declined.
+
+04 Declination Period
+   The declination management now offers to set a period in which no abesences
+   are allowed. Regular members will receive a declination error if their request
+   lies in that period.
+   
+05 Hide Absence Type in Profile
+   A switch defines whether regular users can see an absence type in the Absences 
+   tab of their profile. Only Managers, Directors and Administrators can.
+   
+06 Hide Personal Daynotes
+   It can be configured whether personal daynotes can be hidden from regular users.
+   Only managers, directors and administrators can edit and view them. That way 
+   personal daynotes can be used for managing purposes.
+
+      
+------------------------------------------------------------------------------
+[3.1.006]
+
+DATE
+08.MAR.2008
+
+BUGFIXES
+01 German Language in Showyear
+   The German month and weekday names were not shown in the year calendar.
+
+02 Statistics page date picker
+   The date picker code in the statistics page contained a bug. This was fixed.
+   
+03 Repeat Header Count
+   The repeat header count in the calendar display was broken. Fixed now.
+
+04 Holiday Text Color
+   The Holiday text color was not saved in style sheet. Fixed.
+   
+05 Holiday Removal
+   When deleting a holiday the month templates were not cleared of the
+   holiday. The holiday is now removed from all month templates.
+
+CHANGES
+01 Decline before today - not for Admin, Director and Manager
+   It makes sense to disable this feature for Admins, Directors and Managers.
+
+02 First Day of Week
+   The first day of week can now be set to Monday or Sunday. This will be
+   reflected in the week number display.
+   
+03 Default Group Filter
+   The default group filter can now be set in the admin config page. Each
+   user can still select his own preference in his profile
+   
+04 Tools - Profile menu
+   The Tools menu now contains a link to edit your own profile (if authorized).
+   This was necessary when your name was hidden from the calendar and you had
+   no access to your profile.
+   
+05 Statistics per person
+   The statistics page was enhanced by a breakdown per user for absence and
+   presence. Also, different bar colors are used now.   
+
+
+------------------------------------------------------------------------------
+[3.1.005]
+
+DATE
+02.FEB.2008
+
+BUGFIXES
+01 Installation language array
+   An error in the $LANG array of the installation file has been fixed.
+
+02 Own groups only drop down list
+   The group drop down list always showed all groups even though a user might
+   have set hie own-groups-only flag. This was adjusted.
+
+03 Group Assignment Page
+   The column count was incorrect in certain cases. This was adjusted.   
+
+04 User Language
+   When a user set his custom language it was not used due to an incorrect
+   index page reload function.
+   
+CHANGES
+01 Restricted Statistics View for Group Managers
+   For group managers the statistics page will only show the managed groups
+   
+02 Decline before today
+   The declination management was extended by "decline before today". With
+   this setting no presence can be changed in the past.
+   
+
+------------------------------------------------------------------------------
+[3.1.004]
+
+DATE
+26.JAN.2008
+
+BUGFIXES
+01 Apostroph in personal pop up
+   Apostroph's in personal pop up notes were not escaped correctly when saving
+   to the database.
+   
+CHANGES
+01 Hide managers in All by Group display
+   There is a new option to hide all managers from the All by Group display
+   except from those groups where they are just members.
+   
+
+------------------------------------------------------------------------------
+[3.1.003]
+
+DATE
+08.JAN.2008
+
+BUGFIXES
+01 Corrupted Summary Display
+   In case no absence type was flagged to be shown in the remainder section
+   the summary section had an incorrect count of columns. This was fixed.
+   
+02 Group assignment page
+   There was a column miscount that lead to missing headers. Fixed.
+   
+03 Group membership toggle in IE
+   The membership toggle JavaScript in the addprofile and editprofile pages
+   could not be interpreted correctly by IE. Even though I hate making custom
+   fixes for this browser I did.
+   
+04 Edit Group Authorization
+   The year calendar was not displayed correctly with this auth mode set. This
+   was based on an incorrect authorization check in showyear.php.
+  
+05 About Page corrupt
+   The About page was corrupt. The code was fixed.
+
+CHANGES
+01 Seperate PHPDoc Documentation
+   I have seperated the PHPDoc code documentation. The documentation is now
+   a seperate archive that can be downloaded from www.lewe.com
+   
+   
+------------------------------------------------------------------------------
+[3.1.002]
+
+DATE
+02.JAN.2008
+
+BUGFIXES
+01 Error in group selection display
+   Group selection "All" and "All by group" was working fine, however, the 
+   single group filter was not. This was fixed.
+   
+02 Nesting error in editcalendar.php
+   Due to an HTML nesting error in the editcalendar file, IE would not perform
+   the button Apply action. Firefox was ignoring this mistake. This was fixed.
+   
+   
+------------------------------------------------------------------------------
+[3.1.001]
+
+DATE
+28.DEC.2007
+
+BUGFIXES
+01 Security patch
+   The following files were changed in order to avoid that they can be accessed
+   directly for code injection purposes:
+   includes/avatar.inc.php
+   includes/footer.html.inc.php
+   includes/header.html.inc.php
+   includes/menu.inc.php
+   includes/other.inc.php
+
+02 Missing global parameters
+   The file config.default.php was missing two $CONF parameters.
+
+   
+------------------------------------------------------------------------------
+[3.1.000]
+
+DATE
+23.DEC.2007
+
+BUGFIXES
+01 Language and Theme Drop Down
+   Under certain circumstances the files and directories were not read 
+   correctly to fill the drop down lists.
+   
+02 Input validation
+   Added more input validation to the config page
+   
+03 Absence update
+   The absence type update function had two bugs:
+   1) If 'Approval Required' was unchecked it was not saved when updating.
+   2) Changing the color would unassign the absence icon
+   
+03 Daynote Display
+   The daynote marker and popup was not displayed in certain authorization modes.
+   
+FEATURES
+01 PHPDoc
+   The code is now commented compliant to PHPDoc. The documentation can be found
+   in /doc/phpdoc/
+   
+02 New Public Mode 'View All'
+   With 'View All' public users (not logged in) can view all calendars, daynotes
+   and profiles. In 'View' mode, public users can only view the calendars.
+   
+03 Totals per Month
+   The remainder section now contains another area where the totals per absence
+   type for the current month are displayed. This can be toggled on/off in the
+   configuration.
+   
+04 Template Users
+   Template users offer a way to set absences for a whole group in one shot. All 
+   absences set for a template user are also applied to all other users of the 
+   same group(s) that the template user is assigned to. This can either be a 
+   regular user (real person in your group) or a dummy user that can also be 
+   hidden from display.
+   
+05 User Group Assignment Display
+   The administrator can now configure the amount of user rows after which the
+   header row is repeated. He can also configure the amount of group columns
+   after which the user names are repeated. This offers a much better readability
+   if handling a large amount of users and groups.
+
+06 Backward/Forward paging in Editcalendar
+   A Backward and Forward button now allows to page through the months while
+   in the edit calendar display
+   
+07 Today Filter
+   The month display now offers a filter to only display those users that have
+   a certain absence for today. It only applies to the month of today.
+   
+08 Options Bar
+   The filter drop downs have been moved to a separate options bar right underneath
+   the menu bar. The display of the drops downs can be switched on and off through 
+   the admin configuration page.
+   
+09 Past Day Color
+   You can configure a background color for all days of the current month that lie
+   in the past.
+
+10 Absence type count as present
+   Absence types can now be marked to count as present. This way you can distinguish
+   between different presence types.
+   
+11 Specify gender in registration dialog
+   The registration dialog now contains gender selection
+
+CHANGES
+01 Decommissioned Options Table
+   All options previously stored in the options tabel have been migrated to the
+   config table.
+   
+02 Code Streamlining
+   Changed the lengthy name $tc_config and $tc_language into $CONF and $LANG   
+
+03 No summary count for non-business days
+   The summary does not count the present/absent/delta totals for non-business
+   days anymore
+   
+   
+------------------------------------------------------------------------------
+[3.0.001]
+
+DATE
+23.MAY.2007
+
+BUGFIXES
+01 All by Group Display
+   Fixed a bug in the AllByGroup display of the calendar. Under certain conditions
+   the groups were splitted.
+   
+02 Date computation in Yearview page
+   The year view page only works correct in regards to weekday computation when
+   language is set to English. Now fixed.
+   
+03 Language in second level dialogs
+   The dialogs Editmonth and Editcalendar call another dialog. The language was
+   not passed correctly to this second level dialog.
+   
+04 Tooltip Display
+   The tooltip display did not show the tooltip icon and header background due to
+   a wrong setting in config.default.php.
+   
+05 Index Error Message
+   When the installation corrupt error occured the error message was not displayed
+   because the language was not initialied at that point. Fixed in this release.
+   
+06 Avatar Upload
+   The height of oversized avatars was not computed correctly. Fixed in this release.
+ 
+FEATURES
+01 No sample data load at installation
+   The installation script now offers to not load any sample data. This is helpful
+   if you want to use your existing data.   
+
+  
+------------------------------------------------------------------------------
+[3.0.000]
+
+DATE
+13.MAY.2007
+
+BUGFIXES
+01 JoomlaJack Database Class Name
+   The class name in joomladb.class.php was named incorrectly.
+   
+02 Absence type drop down
+   The absence type drop down lists in editcalendar contained all absence
+   types. Only the allowed absence types for that user may be in that list.
+   This is now fixed.
+   
+03 Group membership toggle
+   When group names start with a letter the membership could not be set in
+   the editprofile dialog. The JavaScript toggle did not work. Fixed.
+   
+04 Icon drop down list
+   Icon files with capital letters in their extension were not included in
+   the drop down list. Fixed.
+   
+05 Dead Help links
+   In some dialogs the help links were dead. Fixed.
+
+06 Database Cleanup
+   When deleting groups or performing a database cleanup some orphans were
+   left due to not deleting all related records.   
+
+FEATURES
+01 Floating Absence counts
+   Lastyear and allowace values for absence types are now float values so you
+   can have 0.5 e.g.
+   
+02 Approval Needed e-Mail
+   Approval needed emails are now CC'd to the user as well.
+   
+03 Deactivate automated E-Mail notifications
+   Enable/Disable E-Mail notifications. If you uncheck this option no automated
+   notifications E-Mails are sent. However, this does not apply to 
+   self-registration mails and to manually sent mails via the Message Center 
+   and the Viewprofile dialog.
+
+04 Multiline Daynotes
+   Daynotes can now be multiline text incl. basic HTML formatting.
+   
+05 Ascending/Descending sort of userlist
+   The calendar and the admin userlist can now be sorted alphabetically in an 
+   ascending or descending order.
+
+06 Birthday and Show Birthday in Import File
+   Birthday and Show Birthday are now additional fields in the import CSV file
+   
+07 Calendar Popup with start date of edited month
+   In the edit calendar dialog the range input calendar popups will now srart
+   the first/last day of the month edited.
+   
+08 Database Dump
+   A complete database dump can be displayed or downloaded from the Admin menu
+   
+09 Group filter for statistics
+   On the statistics page you can now filter by group
+   
+10 User custom fields
+   Six custom text fields (one free text) can now used per user. Also the
+   caption of these fields can be configured by the administrator.
+   
+11 User popup info
+   Like the daynote a user note can be set that will popup when the mouse is
+   moved over the user name in the calendar display.
+
+12 Personal Daynotes Visibility
+   Personal daynotes can only be viewed by registered users.
+   
+13 Year Calendar
+   A new view is available, showing the whole calendar year for one user.
+   
+14 Installation Routine
+   An installation script is now available to ease up the initial configuration
+   and database setup.
+   
+15 Theme Support
+   TeamCal Pro's looks can now be altered to your liking by adding more themes.
+   All styles and images are now located in a specific directory. By simply
+   copying it under a different name and changing it to your liking you can
+   select your new theme on the configuration page.
+   
+16 Icon Dialog
+   Choosing an icon for an absence type is much more convenient now. An extra
+   dialog displays all available icons, selectable by radio buttons.
+
+
+------------------------------------------------------------------------------
+[2.9.004]
+
+DATE
+10.DEC.2006
+
+BUGFIXES
+01 Username does not show
+   When creating a new user the username was not stored correctly. Fixed in
+   this release.
+   
+02 Missing German Texts
+   Added missing German texts for the config page.
+   
+03 No blanks in group shortnames
+   No blanks are allowed in group shortnames. That was not checked properly.
+   
+04 Declination Management Threshold
+   The value for threshold was not stored in the database.
+
+FEATURES
+01 Assign all absence types to new groups
+   When adding a new group all existing absence types are assigned to it
+   
+02 Default amount of months
+   The administrator can now set the default amount of months to display in
+   the calendar view.
+
+03 Show Remainder Switch
+   The remainder section can now be opened by default via a configuration
+   switch.
+
+04 Show Summary Switch
+   The remainder section can now be opened by default via a configuration
+   switch.
+   
+05 Extra submit buttons on config page
+   A Submit and Help button can now be found after each config section.
+
+06 Timezone
+   The administrator can now select the time zone TeamCal Pro will use. This
+   makes sense if ther web server resides in a different time zone than the
+   users.
+   
+07 Presence/Absence Delta
+   An additional line in the summary section shows the weight (Delta) between
+   presence and absence. E.g. if 5 of 8 users are absence and 3 are present
+   the delta is 5-3=2.
+   
+08 Multiline Daynotes
+   Daynotes can now be multiline texts including HTML formatting tags like < b >.
+   
+09 Reason/Comment for absence request
+   When entering an absence the user can now enter a reason/comment for this
+   absence that will be included in the notification mails. In case of declination
+   management switched on this can be used by the manager to approve or decline.
+   
+10 Display symbols in notification mails
+   The notification mails and log entries now show the display symbols in the
+   template string instead of the internal database symbols.
+   
+11 Mark Holidays to count as Business Days
+   Each holiday type can now be marked to count as a business day or not. So 
+   you can mark the school holidays of your kid but still make a this holiday 
+   count as a business day for you.
+   
+12 Different Joomla Database
+   When using the Joomla Jack the Joomla database can now be specified
+   seperately so it can be different from the TeamCal database.
+   
+13 Hide Groups from Calendar
+   You can now set a switch for each group when you want to hide the group
+   from the calendar display.
+   
+14 Public Mode rights
+   When Public Mode is set to "View" the avatars and the profiles are not
+   accessible. The better reflects the public viewing mode idea.
+   
+   
+------------------------------------------------------------------------------
+[2.9.003]
+
+DATE
+13.OCT.2006
+
+BUGFIXES
+01 Security Release
+   After the ad-hoc security patch for the remote file inclusion vulnerability
+   this release covers more potential leverages to compromise the application
+   code. It also displays a warning now on the TeamCal Configuration page so 
+   the administrator knows about the risk.It is highly recommended to upgrade 
+   your installation to 2.9.003
+   
+   
+------------------------------------------------------------------------------
+[2.9.002]
+
+DATE
+12.OCT.2006
+
+BUGFIXES
+01 Security Patch
+   footer.html.inc.php was misused by hijacking a PHP variable. Eliminated this
+   variable from file.
+   
+   
+------------------------------------------------------------------------------
+[2.9.001]
+
+DATE
+09.OCT.2006
+
+BUGFIXES
+01 Upgradeinfo.txt
+   The description was missing one table to be added to the database.
+   
+02 Date Picker in Calendar Edit
+   The Date Picker would not open in Edit Calendar dialog.
+   
+   
+------------------------------------------------------------------------------
+[2.9.000]
+
+DATE
+07.OCT.2006
+
+BUGFIXES
+
+FEATURES
+01 Switch off Avatar feature
+   The administrator can now switch off the Avatar feature completely
+   (no tab in edit profile).
+   
+02 Default Help Language
+   If the language is changed to anything else than English but no according help
+   index.html exists the Help language is defaulted to English.
+   
+03 Show Week Numbers
+   The administrator can now switch on a feature to show the calendar week numbers.
+
+04 HTML Statistics
+   You can now switch off the jpGraph library for statistic graphs. TeamCal Pro
+   will then plot HTML based bar graphs that look very similar.
+   
+05 Absence Icons
+   You can now upload and assign 16*16 pixel icons to any absence type. If done
+   so this icon will be displayed in the calendar instead of the letter symbol.
+   
+06 Seperate Admin Menus
+   The administrator modules have now been seperated into one page each. The admin
+   page got a little overloaded, more might come in the future. There is a new
+   Administrator menu in the Tools menu which opens a sub-menu containing entries
+   for User, Groups, Absence Types, etc.
+   
+07 User ID-Number
+   You can now store a user ID-Number in the personal info. You might wanna use
+   it to hold the employee ID.
+
+08 Absence Type to Group assigment
+   You can now assign absence types to certain groups. That way you can make certain
+   absence types to be available to certain groups only.
+   
+09 Calendar user list grouped by Group
+   You can now select wether you want to list all users alphabetically or grouped
+   by their user group.
+   
+10 Female user icon
+   The user icons now come in "male" and "female" flavor.
+   
+11 Removed jpGraph
+   Based on the licensing issue with jpGraph I removed this library and programmed
+   an own statistics graph engine based on HTML.
+   
+12 Joomla Jack
+   Updated the Mambo Jack to Joomla Jack and made sure it still works in the most
+   current Joomla release 1.0.11 Stable.
+   
+13 TeamCal Pro Configuration Page
+   Many of the settings that were only available by editing config.tcpro.php are
+   now conveniently presented in a configuration page.
+   
+14 Popup Announcements
+   You can now send popup announcements to users, groups or all. These messages
+   will be displayed when a recipient user logs in.
+   
+15 Birthday Notification
+   Users can now select in their profile wether they want to be informed about
+   birthdays of the current day. This notification will be displayed as a popup
+   announcement when the user logs in.
+   
+16 CSV User Import
+   TeamCal Pro now offers a CSV import of user data.
+   
+17 Use of PNG image format
+   Where possible I switched to the smaller PNG image format to speed up the
+   load process. (Note: Users of old and W3C incompatible browsers like IE 6
+   might experience problems displaying those images. I recommend the Firefox
+   browser.)
+   
+18 User Self Registration
+   User can now register their account online. e-Mail address verification and
+   admin approval may be used.
+      
+
+------------------------------------------------------------------------------
+[2.8.001]
+
+DATE
+30.MAY.2006
+
+BUGFIXES
+01 Collapsing/Expanding the Remainder and Summary section defaulted back to the
+   current month.
+   - index.php
+   - includes/functions.tcpro.php
+
+02 Width of Editprofile dialog from within Admin page to narrow for displaying
+   all tabs in one row when using German
+   - includes/users.admin.inc.php
+   
+03 Errors in username follow up actions (avatar file names) were based on not
+   being restrict enough in allowing special characters in user names. User
+   names will (again) only accept letters and numbers to avoid that. 
+   - addprofile.php
+
+FEATURES
+01 The jsCalendar display supports TeamCal Pro languages now. I have created
+   a german language file. Feel free to create yur own and place it in the
+   jsCalendar directory. Name it calendar.[language].js
+   - includes/js/jscalendar/calendar.deutsch.js
+   
+02 Date Picker image mouseover tool tip now supports TeamCal Pro languages.
+   
+
+------------------------------------------------------------------------------
+[2.8.000]
+
+DATE
+29.MAY.2006
+
+Thanks to everybody for your input on bugs and feature requests. I have added/
+fixed the following in 2.8:
+
+FEATURES
+01 Switch off Summary
+   Introduced a new config variable $tc_config['summary'] to toggle the
+   summary display
+
+02 Clear All Notification
+   A notification mail is sent when clearing all entries in calendar
+
+03 User Preference: Group Filter
+   Added an option to the user profile. Each user can chose his default
+   group filter.
+
+04 Deutsche Umlaute
+   Added deutsche Umlaute support
+
+05 Business Day Count
+   The summary header line now shows the amount of business days for the
+   month displayed
+   
+06 Remainder Display
+   There is an expandable and configurable area now in the calendar,
+   displaying the remaining allowance for each user for each absence
+   type for the current year
+   
+07 Repeat Month Header
+   A setting in config.inc.php offers the option to repeat the month
+   header after a recurring amount of user lines.
+   
+08 Recurring Absence
+   You can now select recurring weekdays for a specific absence.
+   
+09 Title and Mobile Info
+   These two new fields were added to the user data.
+   
+10 Statistics
+   A statistics page has been added showing several statistical information
+   like Total Absences, Absences per Type, Total Remainders and such. The
+   information is presented in text form and also in form of a diagram using
+   the jpGraph library.
+   
+11 Avatar
+   TeamCal Pro now supports avatar images for each user. They will show when
+   moving the mouse over the name of the user in the calendar display. This
+   feature can be switched off in config.tcpro.php.
+   
+   
+BUG FIXES
+01 Fixed button ID's for calendar picker in editcalendar.php
+
+02 Fixed the errors showing up when updating the absence counts in the user
+   profile.
+
+
+------------------------------------------------------------------------------
+[2.7.000]
+
+DATE
+06.SEP.2005
+
+FEATURES
+01 Clear Warning
+   When editing your absences the 'Clear' button will now first display a
+   warning message that you must confirm before all check marks are cleared.
+
+02 New Help System
+   There is a completely new help system installed now. Online help is provided
+   by browser based help pages. Also available is a PDF file, CHM file and
+   an eBook.
+
+03 Date range input
+   When editing absences you can now enter a from-to range for longer absence
+   periods.
+   
+04 Announcements
+   Announcements can now be stored for a single user, a group or All. The new
+   announcement page displays all announcements for the currently logged in
+   user.
+   
+05 Absence Count Summary
+   The calendar display now offers an expandable view on the summary of 
+   absences. Listed are the amount of present/absent team members per day 
+   and the absence type count per day and month.
+
+
+BUG FIXES
+01 When updating an absence type no display symbol was accepted when it was
+   used as a config symbol before.
+   
+02 Strip slashes in calender display
+   Slashes werent stripped in the calendar display "O'Reilly" was displayed
+   as "O\'Reilly".
+
+
+------------------------------------------------------------------------------
+[2.6.003]
+
+DATE
+06.SEP.2005
+
+BUG FIXES
+01 A newly created regular user was not shown as a regular user in the header
+   line. The flag was not set correctly in addprofile.php and editprofile.php.
+
+02 The Log page had an error when checking filter settings due to a wrong
+   function call in log.php
+   
+
+
+------------------------------------------------------------------------------
+[2.6.002]
+
+DATE
+06.SEP.2005
+
+BUG FIXES
+01 Birthdays were not shown in calendar. Fixed.
+
+02 A block-before declination deleted all previously entered absences before
+   that date as well. Fixed.
+
+
+
+------------------------------------------------------------------------------
+[2.6.001]
+
+DATE
+12.AUG.2005
+
+BUG FIXES
+
+
+CHANGES
+01 Allow blank and hyphen in group shortname
+   A blank and a hyphen is now allowed in the group shortnames
+   
+02 Clear button in Calendar Pop-Up
+   You can now use a 'Clear' button in your personal calendar pop-up and in
+   the month editor to clear all absences or holidays.
+   
+03 Absence count factor
+   You can now specify a factor for each absence type for its total count.
+   Example: If you set the factor for 'Vacation' to '0.5' and you have taken
+   20, your total count will end up as 10. The factor will also be shown in
+   the absence overview of your profile.
+   Setting the factor to 0 will exclude the absence type from the count.
+   
+04 Absence sorted by display name
+   The absence types on the admin page are now sorted by display name.
+   
+05 Absence Request Rejection
+   The administrator can now specify an absence threshold on all- or on
+   group-basis. If an absence request by a user reaches that threshold the
+   request is declined. A message pops up to the user and the user and/or
+   group manager, directors, administrator are getting an email. These
+   settings are configurable on the admin page.
+   Also you can set a date in the past before which no absence request is
+   accpted.
+   
+06 Message center reply address
+   When a message is sent via the Message center page the reply address is
+   now set to the email address of the logged in user (the one sending the
+   message).
+   
+07 Display Filter Apply Button
+   The display filter bar in the main calendar window is now triggered by 
+   an Apply button not by changing the drop down lists alone.
+   
+08 Data Export
+   All major SQL tables can now be exported into XML or CSV format. The data
+   will be displayed in plain text in a new browser window for copy&paste
+   purposes to process them further as you like.
+
+
+------------------------------------------------------------------------------
+[2.5.004]
+
+DATE
+07.MAY.2005
+
+BUG FIXES
+01 Auhtorization Issues
+   There were a few user right issues based on bugs in the checkAuth() and in
+   the editprofile.php file.
+   
+02 Missing database record
+   The initial empty SQL file was missing a mandatory database record
+
+CHANGES
+01 Environment Page Language
+   The headings in the chkenv.php page are now language based
+   
+02 "All" Entry Language
+   The "All" entry in the group filter drop down are now language based
+   
+03 User Manual Language
+   The menu 'User Manual' will link to an appropriate language manual if one
+   exists following the format <language>.manual.php.
+   E.g. if there is a Swedish language file and a Swedish manual called 
+   'swedish.manual.php' and the user switches to the Swedish language the
+   swedish manual will be opened via the Help Menu.
+   
+
+------------------------------------------------------------------------------
+[2.5.003]
+
+DATE
+01.FEB.2005
+
+BUGFIXES
+01 tcpro options record
+   The 'tcpro' options record was not created if it did not exist yet.
+   
+02 Menu Language
+   The menu is now referencing the language file
+   
+03 Membership tab captions
+   The Membership tab captions are now referencing the language file
+  
+04 Log Page Language
+   The log page is now accepting a previous language choice
+   
+ADDITIONS
+01 Birthday Format Hint
+   Added a date format hint in the AddProfile and EditProfile dialog.
+   
+02 Hide Database Info
+   A new switch has been introduced in config.tcpro.php hiding/showing the 
+   database info in the environment page.
+   
+
+------------------------------------------------------------------------------
+[2.5.002]
+
+DATE
+01.FEB.2005
+
+BUGFIXES
+01 Redeclaration of $loglevel
+   The variable $loglevel was redeclared in classes.tcpro.php line 1043.
+   
+02 Incorrect privileges for Directors
+   Director type users did not receive the appropriate privilges in certain
+   authentication modes.
+   
+03 Group name formatting
+   Group names may not contain non-alphanumeric characters. This was not
+   checked on the admin page when adding or updating groups.
+  
+04 Blank.png
+   Blank.png was missing (but referred to by the menu) in the JSCookMenu
+   imag directory.
+   
+   
+
+------------------------------------------------------------------------------
+[2.5.001]
+
+DATE
+27.MAR.2005
+
+********
+FEATURES
+01 Color Picker
+   The admin page now offers a Javascript based color picker so you can 
+   conveniently pick the foreground and background colors for absence and
+   holiday types. (Thanks to Softcomplex, Inc.)
+   Tigra Color Picker (http://www.softcomplex.com)
+   
+02 Authorization Mode
+   TeamCal Pro now offers a more transparent and comfortable way to chose an
+   authorization mode. There are nine different predefined modes which you can 
+   set in config.tcpro.php. Three of them define what the public can do, the
+   other four define what logged in users can do. Read more details in
+   config.tcpro.php.
+
+03 System Environment Display
+   For troubleshooting purposes administrators will have a system environment
+   check at their hands now. This feature needs to be explicitely enabled in
+   config.tcpro.php though. It will show all tc_config and tc_language 
+   variables and also issue a phpinfo() command.
+
+04 Multiple Group Memberships
+   Users can now be members or managers of multiple groups.
+   
+05 Drop Down Menu
+   TeamCal is now controlled by a very nice JavaScript menu by Heng Yuan.
+   JSCookMenu (http://www.cs.ucla.edu/~heng/JSCookMenu/index.html)
+   
+06 User Birthday Support
+   The birthday can be set for each user. Also a switchable option was added
+   to display the birthday in the calendar (with or without age information).
+
+07 Date Picker
+   Settings dates can now be done more conveniently by a pop up date picker.
+   JSCalendar (http://www.dynarch.com/projects/calendar/)
+   
+08 Absence Count, Allowances
+   The profile of each user now shows the counts for each absence type for
+   the current calendar year. The counting period may be changed. Allowances
+   can also be set for each absence type (general allowance) and for each
+   absence type per user (individual allowance).
+   
+09 Default group filter
+   Each user can now chose to see only his group(s) as the default group filter.
+   
+10 User Options Record
+   A new record was added to hold the user options.
+   
+11 Tabbed User Profile Dialog
+   The user profile dialog was redesigned with a tabbed dialog architecture to
+   show the many information in a more structured and organized manner.
+   
+12 Optimize Admin Page Tables
+   The admin page tables have been revisited to add vertical alignments for
+   better readability.
+
+13 Code Optimizations
+   All files have been revisited for code streamlining purposes meaning less
+   I/O operations and better performance. 
+
+14 System Event Logging
+   Most of the events can now be logged. The admin pages offers nine different
+   event classes to switch on/off for loggin. A system log display is available
+   to view the events.
+
+*******
+REMOVES
+01 Remote Database
+   I have removed the remote database feature. It was a very individual 
+   request and has not been used since then. It also was sensitive towards
+   incorrect configuration.
+
+********
+BUGFIXES
+01 When adding a profile the gender was always overwritten with female.
+   Fixed.   
+
+   
+
+------------------------------------------------------------------------------
+[2.4.006]
+
+DATE
+01.FEB.2005
+
+BUGFIXES
+01 User Delete Button
+   The userprofile delete button was not displayed when logged in as admin
+   and viewer_edit=1.
+   
+
+------------------------------------------------------------------------------
+[2.4.005]
+
+DATE
+30.JAN.2005
+
+BUGFIXES
+01 Daynote Deletion
+   Deleting a personal daynote deleted all daynotes for that day and vice versa.
+   Fixed.
+
+PATCHES
+01 Special characters in username
+   Added a warning message if validation of username shows that special
+   characters have been used.
+   
+02 Escaping Daynotes
+   Added apostroph support for daynotes by slashing/unslashing them. Not too
+   comfortable with it but check it out.
+
+FEATURES
+01 "Director" view
+   Added this user type for someone only supposed to view calendars from a
+   manager point of view. This user can't change anything.
+
+02 Viewer Edit
+   A setting in config.tcpro.php now allows to grant calendar and profile
+   edit access to viewers (not logged in). This setting is meant for groups
+   who trust each other and don't need restricitive logins.
+
+03 Favicon
+   Added a favicon.ico to the root directory. Browsers will show it in the
+   address field and bookmark list.
+
+
+------------------------------------------------------------------------------
+[2.4.004]
+
+DATE
+16.JAN.2005
+
+INFO
+Minor patch release.
+
+PATCHES
+01 Include config file
+   Changed all pages to include config.tcpro.php from root to address 
+   differrent PHP configurations
+   
+
+------------------------------------------------------------------------------
+[2.4.003]
+
+DATE
+13.JAN.2005
+
+INFO
+This is mainly a patch release.
+
+BUGFIXES
+01 Collapse/Expand on Admin page
+   IE was not able to run the standard Javascript code. For those who wanna
+   tkae up with that browser (duh) I made the code compatible.
+   
+02 Absence count
+   Two bugs in the absence count routine were fixed.
+   
+03 Default year in menu
+   If no specific year was selected default year will be the current year
+   
+CHANGES/FEATURES
+01 Group filter by call
+   You can now specify the groupfilter by a URL call parameter:
+   index.php?groupfilter=Disney
+   
+
+------------------------------------------------------------------------------
+[2.4]
+
+DATE
+25.DEC.2004
+
+INFO
+This is mainly a new-feature release.
+
+BUGFIXES
+   
+CHANGES/FEATURES
+01 User Specific Daynote
+   Each user can now set a personal daynote for any given day.
+
+02 Personal View Only
+   By using this switch in config.tcpro.php a user can only see his own
+   calendar data.
+   
+03 Admin Edit Only
+   By using this switch in config.tcpro.php only the administrator can edit
+   calendars.
+   
+04 Absence Count
+   The user profile dialog now shows the sums of each absence type taken by a
+   user. Start and end date of the period to be counted can be specified.
+   
+05 User Gender Field
+   The gender of a user can now be specified.
+   
+06 PHP compatibilty
+   Made a few changes to be more compliant to different PHP versions and
+   settings, like specifying the absolute root directory and putting
+   config.tcpro.php in the index directory.
+
+07 Improved performance
+   Splitted userprofile.php into three files: viewprofile.php, editprofile.php
+   and addprofile.php. Thus each file is much smaller now and loaded faster.
+
+KNOWN BUGS NOT FIXED YET
+
+
+------------------------------------------------------------------------------
+[2.3]
+
+DATE
+10.DEC.2004
+
+INFO
+This is mainly a new-feature release.
+
+BUGFIXES
+   
+CHANGES/FEATURES
+01 Added the database import feature. By configuring the import database
+   'dbi_' in "includes/config.tcpro.php" you can now specify a second database
+   to import absences from. Optionally these imported absences may be converted
+   to 'not present'.
+
+02 Added the so-called "Mambo Jack". By enabling this jack feature you can
+   now run TeamCal Pro as a wrapper application in Mambo 4.5.1. For more
+   details read "doc/mambojack.txt".
+
+KNOWN BUGS NOT FIXED YET
+
+
+------------------------------------------------------------------------------
+[2.2]
+
+DATE
+29.OCT.2004
+
+INFO
+This is mainly a new-feature release.
+
+BUGFIXES
+   
+CHANGES/FEATURES
+01 The code was adjusted to run with register_globals=off (php.ini)
+
+02 A database maintenance feature was added to the admin page. It allows to
+   delete old user templates and to clear the database much quicker.
+   
+03 A new flag was added to the user profile: 'Hide from calendar'. Setting
+   this flag will not display this user in the calendar.
+   
+04 The "Daynote" feature was added. You can now add a note of 80 characters
+   to each day. The corresponding weekday cell will be marked with a specific
+   background color. Moving the mouse over that cell will show a tooltip with
+   the daynote.
+   
+05 The language handling was streamlined and is now handled soley in
+   'includes/config.tcpro.php'.
+   
+06 Getting help in the admin page and some other dialogs was made more 
+   comfortable by placing links to the corresponding help section in the 
+   headers of the admin boxes.
+   
+KNOWN BUGS NOT FIXED YET
+
+
+------------------------------------------------------------------------------
+[2.1]
+
+DATE
+23.AUG.2004
+
+INFO
+This is mainly a bugfix release but also incorporating a new feature.
+
+BUGFIXES
+01 The string 'Name' in the calendar display was hardcoded in v2.0. This is
+   fixed now and part of the language file:
+   $tc_language['cal_caption_name'] = 'Name';
+
+02 The ALT= and TITLE= attributes of the edit-month button and the edit-calendar
+   button was hard coded in v2.0. This is fixed now and part of the language
+   file:
+   $tc_language['cal_img_alt_edit_month'] = 'Edit holidays for this month...';
+   $tc_language['cal_img_alt_edit_cal'] = 'Edit calender for this person...';
+
+03 The v2.0 initial database (initial.sql) contained month template records
+   up to July 2005. Selecting a filter that included August 2005 or later
+   lead to the fact that those months were not displayed. This was a bug in
+   function create_template() in functions.tcpro.php which created empty
+   templates.
+   
+CHANGES/FEATURES
+01 The 'number of months to display' filter was supplemented by "1 month" and
+   "2 months".
+
+
+------------------------------------------------------------------------------
+[2.0]
+
+DATE
+15.AUG.2004
+
+INFO
+This is the initial TeamCal Pro release.
+
+CHANGES
+
+KNOWN BUGS

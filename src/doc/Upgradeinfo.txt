@@ -1,0 +1,1190 @@
+==============================================================================
+TEAMCAL PRO UPGRADE INFO
+==============================================================================
+
+------------------------------------------------------------------------------
+[3.6.019] -> [3.6.020]
+
+1. Backup your current files and database!
+
+2. Download the new release and overwrite all files.
+
+3. Overwrite config.tcpro.php from your backup.
+
+
+------------------------------------------------------------------------------
+[3.6.018] -> [3.6.019]
+
+1. Backup your current files and database!
+
+2. Download the new release and overwrite all files.
+
+3. Overwrite config.tcpro.php from your backup.
+
+4. Database changes (adjust your table name prefix accordingly):
+ALTER TABLE `my_tc_allowances` CHANGE `lastyear` `lastyear` FLOAT(6) NULL DEFAULT '0';
+ALTER TABLE `my_tc_allowances` CHANGE `curryear` `curryear` FLOAT(6) NULL DEFAULT '0';
+
+------------------------------------------------------------------------------
+[3.6.017] -> [3.6.018]
+
+1. Backup your current files and database!
+
+2. Download the new release and overwrite all files.
+
+3. Overwrite config.tcpro.php from your backup.
+
+
+------------------------------------------------------------------------------
+[3.6.016] -> [3.6.017]
+
+1. Backup your current files and database!
+
+2. Download the new release and overwrite all files.
+
+3. Overwrite config.tcpro.php from your backup.
+
+4. Database changes (adjust your table name prefix accordingly):
+ALTER TABLE `my_tc_absences` ADD `bgtransparent` BOOLEAN NOT NULL DEFAULT FALSE AFTER `bgcolor`;
+
+
+------------------------------------------------------------------------------
+[3.6.015] -> [3.6.016]
+
+1. Backup your current files and database!
+
+2. Download the new release and overwrite all files.
+
+3. Overwrite config.tcpro.php from your backup.
+
+4. Database changes (adjust your table name prefix accordingly):
+ALTER TABLE `my_tc_absences` ADD `admin_allowance` TINYINT NOT NULL ;
+
+
+------------------------------------------------------------------------------
+[3.6.014] -> [3.6.015]
+
+1. Backup your current files and database!
+
+2. Download the new release and overwrite all files.
+
+3. Overwrite config.tcpro.php from your backup.
+
+4. Database changes (adjust your table name prefix accordingly):
+ALTER TABLE `my_tc_users` CHANGE `last_login` `last_login` DATETIME NULL DEFAULT NULL;
+
+
+------------------------------------------------------------------------------
+[3.6.013] -> [3.6.014]
+
+1. Backup your current files and database!
+
+2. Download the new release and overwrite all files.
+
+3. Overwrite config.tcpro.php from your backup.
+
+
+------------------------------------------------------------------------------
+[3.6.012] -> [3.6.013]
+
+1. Backup your current files and database!
+
+2. Download the new release and overwrite all files.
+
+3. Overwrite config.tcpro.php from your backup.
+
+
+------------------------------------------------------------------------------
+[3.6.011] -> [3.6.012]
+
+1. Backup your current files and database!
+
+2. Download the new release and overwrite all files.
+
+3. Overwrite config.tcpro.php from your backup.
+
+5. Database changes:
+INSERT INTO `my_tc_config` ( `id`, `name`, `value` ) VALUES ( NULL , 'showUserRegion', '0' );
+
+
+------------------------------------------------------------------------------
+[3.6.010] -> [3.6.011]
+
+1. Backup your current files and database!
+
+2. Download the new release and overwrite all files.
+
+3. Update your config.tcpro.php backup file
+
+   Add these lines in the Table names section
+   
+$CONF['db_table_archive_users']             = $CONF['db_table_prefix'].'tc_archive_users';
+$CONF['db_table_archive_user_group']        = $CONF['db_table_prefix'].'tc_archive_user_group';
+$CONF['db_table_archive_user_options']      = $CONF['db_table_prefix'].'tc_archive_user_options';
+$CONF['db_table_archive_templates']         = $CONF['db_table_prefix'].'tc_archive_templates';
+$CONF['db_table_archive_daynotes']          = $CONF['db_table_prefix'].'tc_archive_daynotes';
+$CONF['db_table_archive_allowance']         = $CONF['db_table_prefix'].'tc_archive_allowances';
+$CONF['db_table_archive_user_announcement'] = $CONF['db_table_prefix'].'tc_archive_user_announcement';
+
+   Add these lines in the LDAP section
+   
+$CONF['LDAP_ADS']   = 0;                   // Set to 1 when authenticating against an Active Directory
+
+   Set this value to 1 if you are using LDAP and are authenticating against an Active Directory
+
+4. Overwrite config.tcpro.php from your backup.
+
+5. Database changes:
+
+INSERT INTO `my_tc_config` ( `id`, `name`, `value` ) VALUES ( NULL , 'emailNoPastNotifications', '0' );
+
+CREATE TABLE IF NOT EXISTS `my_tc_archive_allowances` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(40) NOT NULL,
+  `absid` int(11) NOT NULL,
+  `lastyear` smallint(6) DEFAULT '0',
+  `curryear` smallint(6) DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+CREATE TABLE IF NOT EXISTS `my_tc_archive_daynotes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `yyyymmdd` varchar(8) DEFAULT NULL,
+  `daynote` text,
+  `username` varchar(40) NOT NULL DEFAULT 'all',
+  `region` varchar(40) NOT NULL DEFAULT 'default',
+  PRIMARY KEY (`id`),
+  KEY `yyyymmdd` (`yyyymmdd`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+CREATE TABLE IF NOT EXISTS `my_tc_archive_templates` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(40) DEFAULT NULL,
+  `year` varchar(4) DEFAULT NULL,
+  `month` char(2) DEFAULT NULL,
+  `abs1` int(11) DEFAULT NULL,
+  `abs2` int(11) DEFAULT NULL,
+  `abs3` int(11) DEFAULT NULL,
+  `abs4` int(11) DEFAULT NULL,
+  `abs5` int(11) DEFAULT NULL,
+  `abs6` int(11) DEFAULT NULL,
+  `abs7` int(11) DEFAULT NULL,
+  `abs8` int(11) DEFAULT NULL,
+  `abs9` int(11) DEFAULT NULL,
+  `abs10` int(11) DEFAULT NULL,
+  `abs11` int(11) DEFAULT NULL,
+  `abs12` int(11) DEFAULT NULL,
+  `abs13` int(11) DEFAULT NULL,
+  `abs14` int(11) DEFAULT NULL,
+  `abs15` int(11) DEFAULT NULL,
+  `abs16` int(11) DEFAULT NULL,
+  `abs17` int(11) DEFAULT NULL,
+  `abs18` int(11) DEFAULT NULL,
+  `abs19` int(11) DEFAULT NULL,
+  `abs20` int(11) DEFAULT NULL,
+  `abs21` int(11) DEFAULT NULL,
+  `abs22` int(11) DEFAULT NULL,
+  `abs23` int(11) DEFAULT NULL,
+  `abs24` int(11) DEFAULT NULL,
+  `abs25` int(11) DEFAULT NULL,
+  `abs26` int(11) DEFAULT NULL,
+  `abs27` int(11) DEFAULT NULL,
+  `abs28` int(11) DEFAULT NULL,
+  `abs29` int(11) DEFAULT NULL,
+  `abs30` int(11) DEFAULT NULL,
+  `abs31` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `username` (`username`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+CREATE TABLE IF NOT EXISTS `my_tc_archive_users` (
+  `username` varchar(40) NOT NULL DEFAULT '',
+  `password` varchar(40) DEFAULT NULL,
+  `firstname` varchar(80) DEFAULT NULL,
+  `lastname` varchar(80) DEFAULT NULL,
+  `title` varchar(80) DEFAULT NULL,
+  `position` varchar(80) DEFAULT NULL,
+  `group` varchar(50) DEFAULT NULL,
+  `phone` varchar(50) DEFAULT NULL,
+  `mobile` varchar(50) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `notify` tinyint(4) DEFAULT '0',
+  `notify_group` varchar(50) DEFAULT NULL,
+  `status` tinyint(4) DEFAULT '0',
+  `usertype` tinyint(4) DEFAULT '0',
+  `ut_group` varchar(50) DEFAULT NULL,
+  `privileges` tinyint(4) NOT NULL DEFAULT '1',
+  `bad_logins` int(11) DEFAULT '0',
+  `bad_logins_start` varchar(15) DEFAULT NULL,
+  `last_pw_change` datetime DEFAULT NULL,
+  `birthday` date DEFAULT NULL,
+  `idnumber` varchar(40) DEFAULT NULL,
+  `last_login` datetime DEFAULT NULL,
+  `custom1` varchar(80) NOT NULL DEFAULT '',
+  `custom2` varchar(80) NOT NULL DEFAULT '',
+  `custom3` varchar(80) NOT NULL DEFAULT '',
+  `custom4` varchar(80) NOT NULL DEFAULT '',
+  `custom5` varchar(80) NOT NULL DEFAULT '',
+  `customFree` text NOT NULL,
+  `customPopup` text NOT NULL,
+  PRIMARY KEY (`username`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `my_tc_archive_user_announcement` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(40) DEFAULT NULL,
+  `ats` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
+
+CREATE TABLE IF NOT EXISTS `my_tc_archive_user_group` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(40) DEFAULT NULL,
+  `groupname` varchar(40) DEFAULT NULL,
+  `type` tinytext,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+CREATE TABLE IF NOT EXISTS `my_tc_archive_user_options` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(40) DEFAULT NULL,
+  `option` varchar(40) DEFAULT NULL,
+  `value` text,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
+
+
+------------------------------------------------------------------------------
+[3.6.009] -> [3.6.010]
+
+Backup your current files and database!
+
+Download the new release and overwrite all files.
+Overwrite config.tcpro.php from your backup.
+
+Database changes:
+
+
+------------------------------------------------------------------------------
+[3.6.008] -> [3.6.009]
+
+Backup your current files and database!
+
+Download the new release and overwrite all files.
+Overwrite config.tcpro.php from your backup.
+
+Database changes:
+ALTER TABLE `my_tc_absences` ADD `counts_as` INT( 11 ) NOT NULL AFTER `allowance`; 
+INSERT INTO `my_tc_config` ( `id`, `name`, `value` ) VALUES ( NULL , 'avatarMaxSize', '250000' );
+
+------------------------------------------------------------------------------
+[3.6.007] -> [3.6.008]
+
+Backup your current files and database!
+
+Download the new release and overwrite all files.
+Overwrite config.tcpro.php from your backup.
+
+------------------------------------------------------------------------------
+[3.6.006] -> [3.6.007]
+
+Backup your current files and database!
+
+Download the new release and overwrite all files.
+Overwrite config.tcpro.php from your backup.
+
+------------------------------------------------------------------------------
+[3.6.005] -> [3.6.006]
+
+Backup your current files and database!
+
+Download the new release and overwrite all files.
+
+Overwrite config.tcpro.php from your backup.
+Edit config.tcpro.php and search for the line:
+$CONF['UTTEMPLATE']        = 0x20;     // Flag: User Type: Template (absences copied to all other users of the same group)
+
+After that line, add this one:
+$CONF['UTASSISTANT']       = 0x40;     // Flag: User Type: Assistant
+
+
+Database changes:
+
+INSERT INTO `my_tc_config` ( `id`, `name`, `value` ) VALUES ( NULL , 'hideManagerOnlyAbsences', '0' );
+INSERT INTO `my_tc_config` ( `id`, `name`, `value` ) VALUES ( NULL , 'presenceBase', 'calendardays' );
+INSERT INTO `my_tc_config` ( `id`, `name`, `value` ) VALUES ( NULL , 'mailHTML', '1' );
+
+ALTER TABLE `my_tc_permissions` ADD `assistant` TINYINT NOT NULL AFTER `manager`;
+
+Make sure the table name matches yours.
+
+------------------------------------------------------------------------------
+[3.6.004] -> [3.6.005]
+
+Backup your current files and database!
+
+Download the new release and overwrite all files.
+Overwrite config.tcpro.php from your backup.
+
+Database changes:
+
+INSERT INTO `my_tc_config` ( `id`, `name`, `value` ) VALUES ( NULL , 'logLanguage', 'english' );
+
+This entry is necessary for the new log language feature. Make sure the table
+name matches yours.
+
+------------------------------------------------------------------------------
+[3.6.003] -> [3.6.004]
+
+Backup your current files and database!
+
+Download the new release and overwrite all files.
+Overwrite config.tcpro.php from your backup.
+
+------------------------------------------------------------------------------
+[3.6.001] -> [3.6.003]
+
+Backup your current files and database!
+
+Download the new release and overwrite all files.
+Overwrite config.tcpro.php from your backup.
+
+Note:
+After the upgrade, login as admin, go to the configuration page and Apply the
+settings so that new values are written to the database. This is important
+for the default language and the help URL. 
+
+------------------------------------------------------------------------------
+[3.6.000] -> [3.6.001]
+
+Backup your current files and database!
+
+Download the new release and overwrite all files.
+Overwrite config.tcpro.php from your backup.
+
+Note:
+One change in 3.6.001 might need your special attention. In previous 
+releases,  an inconsistent username format check in the registration dialog 
+and the CSV import feature might have lead to usernames in your installation 
+that contain other than alphanumeric characters. These usernames can cause
+problems with the Fast Edit feature. If that is the case in your installation
+I recommend to update those usernames in your database and inform the users
+about that accordingly. If you don't use Fast Edit, all is good.
+
+------------------------------------------------------------------------------
+[3.5.002] -> [3.6.000]
+
+Backup your current files and database!
+
+For this upgrade create a copy of your database. Install a fresh 3.6.000 at
+a new location.
+
+In your new installation folder, copy config.default.php => config.tcpro.php.
+
+Edit config.tcpro.php, enter your URLs and point to the copy of your data-
+base. Make sure the table prefix is correct in case you used a different
+one than default.
+
+Direct your browser to the new installation to file: upgrade35-36.php
+
+This helper will upgrade your database to the new tables necessary to
+support the unlimited absence types. The script will display some messages on
+the screen showing the changes done to your database.
+
+Load your new TeamCal Pro in your browser. The display might not look perfect
+yet. Log in as admin, go to the configuration page and apply it. There are
+new values in 3.6.000 that will then be saved. Make sure the jQuery Style on
+the General settings page is set to 'base' for starters. Play with other themes
+later.
+
+Refresh. It should now look all good. Perform a few tests and if you're happy
+make it your production instance.
+
+------------------------------------------------------------------------------
+[3.5.001] -> [3.5.002]
+
+Backup your current files and database!
+
+Download the release 3.5.002 and overwrite all files.
+Overwrite config.tcpro.php from your backup.
+
+------------------------------------------------------------------------------
+[3.5.000] -> [3.5.001]
+
+Backup your current files and database!
+
+Download the release 3.5.001 and overwrite all files.
+Overwrite config.tcpro.php from your backup.
+
+------------------------------------------------------------------------------
+[3.4.003] -> [3.5.000]
+
+Backup your current files and database!
+
+Download the new release and overwrite all files.
+
+Do not overwrite config.tcpro.php from your backup, instead edit the new 
+config.tcpro.php file and add your custom information (replace the values
+shown here with yours):   
+$CONF['app_root'] = $_SERVER['DOCUMENT_ROOT']."/tcpro/";
+$CONF['app_url'] = "http://localhost/tcpro";
+$CONF['db_server'] ="localhost";
+$CONF['db_name']   ="test";
+$CONF['db_user']   ="root";
+$CONF['db_pass']   ="";
+
+Change the database as follows:
+
+CREATE TABLE `my_tc_permissions` ( 
+  `scheme` varchar(80) NOT NULL,
+  `permission` varchar(40) NOT NULL,
+  `admin` tinyint(1) NOT NULL,
+  `director` tinyint(1) NOT NULL,
+  `manager` tinyint(1) NOT NULL,
+  `user` tinyint(1) NOT NULL,
+  `public` tinyint(1) NOT NULL,
+  PRIMARY KEY (`scheme`,`permission`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+INSERT INTO `my_tc_permissions` VALUES('Default', 'viewAllGroups', '1', '1', '0', '0', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'viewStatistics', '1', '1', '1', '0', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'useMessageCenter', '1', '1', '1', '1', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'viewAnnouncements', '1', '1', '1', '1', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'viewYearCalendar', '1', '1', '1', '1', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'viewGroupUserCalendars', '1', '0', '1', '1', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'viewAllUserCalendars', '1', '1', '0', '0', '1');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'viewCalendar', '1', '1', '1', '1', '1');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'editGroupUserDaynotes', '1', '0', '1', '0', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'editAllUserDaynotes', '1', '0', '0', '0', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'editOwnUserCalendars', '1', '1', '1', '1', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'editGroupUserCalendars', '1', '0', '1', '0', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'editAllUserCalendars', '1', '0', '0', '0', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'editGroupUserProfiles', '1', '0', '1', '0', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'editAllUserProfiles', '1', '0', '0', '0', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'editGroupUserAllowances', '1', '0', '1', '0', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'editAllUserAllowances', '1', '0', '0', '0', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'viewUserAbsenceCounts', '1', '1', '1', '0', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'viewUserProfiles', '1', '1', '1', '1', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'editConfig', '1', '0', '0', '0', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'editPermissionScheme', '1', '0', '0', '0', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'manageUsers', '1', '0', '0', '0', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'manageGroups', '1', '0', '0', '0', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'manageGroupMemberships', '1', '0', '0', '0', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'editAbsenceTypes', '1', '0', '0', '0', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'editRegions', '1', '0', '0', '0', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'editHolidays', '1', '0', '0', '0', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'editDeclination', '1', '0', '0', '0', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'manageDatabase', '1', '0', '0', '0', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'viewSystemLog', '1', '0', '0', '0', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'editSystemLog', '1', '0', '0', '0', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'viewEnvironment', '1', '0', '0', '0', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'editGlobalCalendar', '1', '0', '1', '0', '0');
+INSERT INTO `my_tc_permissions` VALUES('Default', 'editGlobalDaynotes', '1', '0', '1', '0', '0');
+
+Add some entries into the config table. Replace the record ID with the one fitting your count.
+
+INSERT INTO `my_tc_config` VALUES('<your-ID-here>', 'permissionScheme', 'Default');
+INSERT INTO `my_tc_config` VALUES('<your-ID-here>', 'logfilterPermission', '1');
+INSERT INTO `my_tc_config` VALUES('<your-ID-here>', 'logPermission', '1');
+INSERT INTO `my_tc_config` VALUES('<your-ID-here>', 'jQueryCDN', '0');
+INSERT INTO `my_tc_config` VALUES('<your-ID-here>', 'googleAnalytics', '0');
+INSERT INTO `my_tc_config` VALUES('<your-ID-here>', 'googleAnalyticsID', '');
+INSERT INTO `my_tc_config` VALUES('<your-ID-here>', 'welcomeIcon', 'No');
+INSERT INTO `my_tc_config` VALUES('<your-ID-here>', 'webMeasure', '0');
+
+Optional:
+You can delete two entries from the my_tc_config table (might have a different
+prefix in your environment). It does not hurt though to leave them in.:
+DELETE FROM `my_tc_config` WHERE `my_tc_config`.`name` = "publicMode";
+DELETE FROM `my_tc_config` WHERE `my_tc_config`.`name` = "registeredMode";
+
+
+------------------------------------------------------------------------------
+[3.4.002] -> [3.4.003]
+
+Backup your current files and database!
+
+Download the release 3.4.003 and overwrite all files.
+Overwrite config.tcpro.php from your backup.
+
+------------------------------------------------------------------------------
+[3.4.001] -> [3.4.002]
+
+Backup your current files and database!
+
+Download the release 3.4.002 and overwrite all files.
+Overwrite config.tcpro.php from your backup.
+
+Add the following line to your config.tcpro.php in the the Table names section:
+$CONF['db_table_styles']            = $CONF['db_table_prefix'].'tc_styles';
+
+Change the database as follows:
+
+CREATE TABLE IF NOT EXISTS `my_tc_styles` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(40) CHARACTER SET utf8 NOT NULL,
+  `value` longtext COLLATE utf8_general_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE utf8_general_ci AUTO_INCREMENT=1;
+
+Note: The first time you start TeamCal Pro there will be no styles yet since
+the above newly added table does not contain any entries yet. Just navigate
+to the TeamCal Configuration page and click [Apply]. That will create the styles
+and save it to the above table.
+ 
+------------------------------------------------------------------------------
+[3.4.000] -> [3.4.001]
+
+Backup your current files and database!
+
+Download the release 3.4.001 and overwrite all files.
+Overwrite config.tcpro.php from your backup.
+
+------------------------------------------------------------------------------
+[3.3.010] -> [3.4.000]
+
+Backup your current files and database!
+
+Download the release 3.4.000 and overwrite all files.
+Overwrite config.tcpro.php from your backup.
+
+------------------------------------------------------------------------------
+[3.3.009] -> [3.3.010]
+
+Backup your current files and database!
+
+Download the release 3.3.010 and overwrite the following files:
+
+absences.php
+config.php
+daynote.php
+editcalendar.php
+editmonth.php
+message.php
+showyear.php
+includes/functions.tcpro.php
+includes/showmonth.function.php
+includes/lang/deutsch.tcpro.php
+inlcudes/lang/english.tcpro.php
+sql/empty.sql
+sql/sample.sql
+
+There are no database changes in this update.
+
+------------------------------------------------------------------------------
+[3.3.008] -> [3.3.009]
+
+Backup your current files and database!
+
+Download the release 3.3.009 and overwrite the following files:
+
+editprofile.php
+message.php
+includes\functions.tcpro.php
+includes\tcregion.class.php
+
+There are no database changes in this update.
+
+------------------------------------------------------------------------------
+[3.3.007] -> [3.3.008]
+
+Backup your current files and database!
+
+Download the release 3.3.008 and overwrite the following files:
+
+absences.php
+includes\lang\deutsch.tcpro.php
+
+There are no database changes in this update.
+
+------------------------------------------------------------------------------
+[3.3.006] -> [3.3.007]
+
+Backup your current files and database!
+
+Download the release 3.3.007 and overwrite the following files:
+
+absences.php
+config.version.php
+index.php
+login.php
+register.php
+verify.php
+doc\Releaseinfo.php
+doc\Upgradeinfo.php
+help\english\*.*
+includes\functions.tcpro.php
+includes\header.html.inc.php
+includes\menu.inc.php
+includes\tcabsence.class.php
+includes\tcgroup.class.php
+includes\tcregion.class.php
+includes\tcuser.class.php
+includes\lang\english.tcpro.php
+includes\lang\deutsch.tcpro.php
+sql\empty.sql
+sql\sample.sql
+
+There are no database changes in this update.
+
+------------------------------------------------------------------------------
+[3.3.005] -> [3.3.006]
+
+Backup your current files and database!
+
+Overwrite all files.
+Keep your file config.tcpro.php
+Delete installation.php
+
+There are no database changes in this update.
+
+------------------------------------------------------------------------------
+[3.3.004] -> [3.3.005]
+
+Backup your current files and database!
+
+Overwrite all files.
+Keep your file config.tcpro.php
+Delete installation.php
+
+There are no database changes in this update.
+
+------------------------------------------------------------------------------
+[3.3.003] -> [3.3.004]
+
+Backup your current files and database!
+
+Overwrite all files.
+Keep your file config.tcpro.php
+Delete installation.php
+
+There are no database changes in this update.
+
+------------------------------------------------------------------------------
+[3.3.002] -> [3.3.003]
+
+Backup your current files and database!
+
+Overwrite:
+
+absences.php
+config.version.php
+editcalendar.php
+editprofile.php
+groups.php
+statistics.php
+includes/lang/english.tcpro.php
+includes/lang/deutsch.tcpro.php
+
+------------------------------------------------------------------------------
+[3.3.001] -> [3.3.002]
+
+Backup your current files and database!
+
+Overwrite:
+
+editmonth.php
+regions.php
+showyear.php
+includes/tcconfig.class.php
+includes/tcmonth.class.php
+includes/tcuseroption.class.php
+
+------------------------------------------------------------------------------
+[3.2.004] -> [3.3.001]
+
+Backup your current files and database!
+
+Overwrite all files.
+
+Edit config.tcpro.php.and adjust the section 'PERSONALIZATION' and 'DATABASE'
+to what it was in your previous version of the file that you have backed up.
+
+After login, open the admin config page first and save it once to add the new 
+parameters for the default period.
+
+------------------------------------------------------------------------------
+[3.2.003] -> [3.2.004]
+
+Backup your current files and database!
+
+Overwrite all files.
+
+Delete the folders help/english/HTMLHelp and help/english/eBook. These help
+formats are not supported anymore and the menu will not have entries to these
+files anymore.
+
+Edit config.tcpro.php.and adjust the section 'PERSONALIZATION' and 'DATABASE'
+to what it was in your previous version of the file that you have backed up.
+
+
+------------------------------------------------------------------------------
+[3.2.000, 3.2.001, 3.2.002] -> [3.2.003]
+
+Backup your current files and database!
+
+Overwrite all files except(!) config.tcpro.php.
+
+
+------------------------------------------------------------------------------
+[3.2.001] -> [3.2.002]
+
+Backup your current files and database!
+
+Overwrite:
+includes/tcmonth.class.php
+includes/showmonth.function.php
+
+
+------------------------------------------------------------------------------
+[3.2.000] -> [3.2.001]
+
+Backup your current files and database!
+
+Overwrite all .PHP files except(!) config.tcpro.php.
+
+
+------------------------------------------------------------------------------
+[3.1.006] -> [3.2.000]
+
+Backup your current files and database!
+
+Overwrite all files.
+Copy config.default.php to config.tcpro.php.
+Edit config.tcpro.php and change your individual settings (e.g. $CONF['app_url'], 
+database settings) as they were in your backed up copy.
+
+Change the database as follows:
+ 
+CREATE TABLE `my_tc_regions` (
+`regionname` VARCHAR( 40 ) NOT NULL ,
+`description` VARCHAR( 100 ) NULL DEFAULT NULL ,
+`options` SMALLINT( 6 ) DEFAULT '0'  ,
+PRIMARY KEY ( `regionname` )
+) ENGINE = MYISAM ;
+
+ALTER TABLE `my_tc_daynotes` ADD `region` VARCHAR( 40 ) NOT NULL DEFAULT 'default'; 
+ALTER TABLE `my_tc_months` ADD `region` VARCHAR( 40 ) NOT NULL DEFAULT 'default';
+ALTER TABLE `my_tc_groups` ADD `min_present` SMALLINT NOT NULL DEFAULT '1';
+ALTER TABLE `my_tc_groups` ADD `max_absent` SMALLINT NOT NULL DEFAULT '1';
+
+
+------------------------------------------------------------------------------
+[3.1.005] -> [3.1.006]
+No database change.
+Overwrite all files (except your config.tcpro.php). 
+*.php
+includes/*.php
+
+
+------------------------------------------------------------------------------
+[3.1.003/4] -> [3.1.005]
+No database change.
+Overwrite all files 
+*.php
+includes/*.php
+
+
+------------------------------------------------------------------------------
+[3.1.002] -> [3.1.003]
+Overwrite the following 3.1.001 files with those from the 3.1.002 package:
+   about.php
+   addprofile.php
+   editcprofile.php
+   groupassign.php
+   showyear.php
+   includes/js/tcpro.js
+   includes/showmonth.function.php
+
+
+------------------------------------------------------------------------------
+[3.1.001] -> [3.1.002]
+Overwrite the following 3.1.001 files with those from the 3.1.002 package:
+   includes/showmonth.function.php
+   editcalendar.php
+
+
+------------------------------------------------------------------------------
+[3.1.000] -> [3.1.001]
+Overwrite the following 3.1.000 files with those from the 3.1.001 package:
+   includes/avatar.inc.php
+   includes/footer.html.inc.php
+   includes/header.html.inc.php
+   includes/menu.inc.php
+   includes/other.inc.php
+
+Add the following lines in your config.tcpro.php, at the end of the Absence
+Type options:
+$CONF['A_SHOWTOTAL']   = 0x000004;         // Flag: Include absence total in remainder section
+$CONF['A_PRESENCE']    = 0x000008;         // Flag: This absence type counts as 'present'
+
+
+------------------------------------------------------------------------------
+[3.0.001] -> [3.1.000]
+I recommend to create a new installation of TeamCal 3.0.000 since many files have
+been changed or added (just copy the files to a new directory on your web server).
+Also copy your old database using a different prefix.
+
+The database needs to get the following changes:
+
+DROP TABLE `my_tc_options`;
+ALTER TABLE `my_tc_log` CHANGE `type` `type` VARCHAR( 40 ) NULL DEFAULT NULL;
+ALTER TABLE `my_tc_users` CHANGE `last_login` `last_login` DATETIME NOT NULL;  
+ALTER TABLE `my_tc_announcements` CHANGE `timestamp` `timestamp` DATETIME NOT NULL;  
+ALTER TABLE `my_tc_user_announcement` CHANGE `ats` `ats` DATETIME NOT NULL;
+ALTER TABLE `my_tc_log` CHANGE `timestamp` `timestamp` DATETIME NOT NULL;
+
+
+------------------------------------------------------------------------------
+[3.0.000] -> [3.0.001]
+No database changes. You can leave your data as is.
+Replace the following files after backing up your old ones:
+
+config.default.php
+editcalendar.php
+editmonth.php
+editprofile.php
+index.php
+installation.php (not if you have already installed)
+showyear.php
+includes/header.html.inc.php
+includes/showmonth.function.php
+includes/tcavatar.class.php
+includes/tcusergroup.class.php
+includes/version.inc.php
+
+Edit your existing config.tcpro.php. 
+
+Find this line:
+$tc_config['ovl_tt_bgbackground'] = 'BGBACKGROUND, \''.$tc_config['app_url'].'themes/'.$theme.'/img/bg_tooltip.gif\', ';
+Change it to:
+$tc_config['ovl_tt_bgbackground'] = 'BGBACKGROUND, \''.$tc_config['app_url'].'/themes/'.$theme.'/img/bg_tooltip.gif\', ';
+
+Find this line:
+$tc_config['ovl_tt_capicon'] = 'CAPICON, \''.$tc_config['app_url'].'themes/'.$theme.'/img/ico_help.png\', ';
+Change it to:
+$tc_config['ovl_tt_capicon'] = 'CAPICON, \''.$tc_config['app_url'].'/themes/'.$theme.'/img/ico_tt.png\', ';
+
+
+------------------------------------------------------------------------------
+[2.9.004] -> [3.0.000]
+I recommend to create a new installation of TeamCal 3.0.000 since many files have
+been changed or added (just copy the files to a new directory on your web server).
+Also copy your old database using a different prefix.
+
+The database needs to get the following changes:
+
+ALTER TABLE `my_tc_daynotes` CHANGE `daynote` `daynote` TEXT NULL DEFAULT NULL;
+
+ALTER TABLE `my_tc_users` 
+ADD `custom1` VARCHAR( 80 ) NOT NULL ,
+ADD `custom2` VARCHAR( 80 ) NOT NULL ,
+ADD `custom3` VARCHAR( 80 ) NOT NULL ,
+ADD `custom4` VARCHAR( 80 ) NOT NULL ,
+ADD `custom5` VARCHAR( 80 ) NOT NULL ,
+ADD `customFree` TEXT NOT NULL ,
+ADD `customPopup` TEXT NOT NULL ;
+
+Now copy config.default.php to config.tcpro.php. Edit the new file and change
+$tc_config['app_root'], $tc_config['app_url'] and your database and prefix info.
+
+
+------------------------------------------------------------------------------
+[2.9.003] -> [2.9.004]
+I recommend to create a new installation of TeamCal 2.9.004 since many files have
+been changed or added (just copy the files to a new directory on your web server).
+Also copy your old database using a different prefix.
+
+The database needs to get the following changes:
+
+ALTER TABLE `my_tc_groups` ADD `options` SMALLINT( 6 ) DEFAULT '0' AFTER `description`;
+ALTER TABLE `my_tc_holidays` ADD `options` SMALLINT( 6 ) DEFAULT '0' AFTER `dspbgcolor`;
+
+Test your new installation with your data before you cut over for good.
+
+------------------------------------------------------------------------------
+[2.9.002] -> [2.9.003]
+After the ad-hoc security patch for the remote file inclusion vulnerability
+this release eliminates more potential leverages to compromise the application
+code. It also displays a warning now on the TeamCal Configuration page so 
+the administrator knows about the risk.
+It is highly recommended to upgrade your installation to 2.9.003.
+
+The following files were changed:
+
+config.php
+doc/releaseinfo.txt
+doc/upgradeinfo.txt
+includes/absencecount.inc.php
+includes/avatar.inc.php
+includes/footer.html.inc.php
+includes/header.html.inc.php
+includes/menu.inc.php
+includes/version.inc.php
+includes/lang/deutsch.tcpro.php
+includes/lang/english.tcpro.php
+
+Just overwrite the files.
+
+------------------------------------------------------------------------------
+[2.9.001] -> [2.9.002]
+Ad-hoc security patch, the following files were changed/added:
+
+config.tcpro.php
+doc/releaseinfo.txt
+doc/upgradeinfo.txt
+includes/footer.html.inc.php
+includes/header.html.inc.php
+includes/version.inc.php
+
+Just overwrite the files. However, you need to adjust config.tcpro.php with
+your individual settings.
+
+------------------------------------------------------------------------------
+[2.8.001] -> [2.9.000]
+I recommend to create a new installation of TeamCal 2.9 since many files have
+been changed or added (just copy the files to a new directory on your web server).
+Also copy your old database using a different prefix.
+
+The database needs to get the following changes:
+
+ALTER TABLE `my_tc_absence` ADD `iconfile` VARCHAR( 100 ) ;
+ALTER TABLE `my_tc_users` ADD `idnumber` VARCHAR( 40 ) ;
+ALTER TABLE `my_tc_users` ADD `last_login` TIMESTAMP ;
+ALTER TABLE `my_tc_announcements` ADD `popup` BOOL DEFAULT '0';
+ALTER TABLE `my_tc_announcements` ADD `silent` BOOL DEFAULT '1';
+
+CREATE TABLE `my_tc_config` (
+`id` INT NOT NULL AUTO_INCREMENT ,
+`name` VARCHAR( 40 ) NOT NULL ,
+`value` VARCHAR( 160 ) NOT NULL ,
+PRIMARY KEY ( `id` ) ,
+INDEX ( `name` )
+) TYPE = MYISAM ;
+
+CREATE TABLE `my_tc_absence_group` (
+  `id` int(11) NOT NULL auto_increment,
+  `absence` char(1) default NULL,
+  `group` varchar(40) default NULL,
+  PRIMARY KEY  (`id`)
+) TYPE=MyISAM ;
+
+
+------------------------------------------------------------------------------
+[2.7.xxx] -> [2.8.000]
+
+Changes to the database:
+------------------------
+I recommend to create a new installation of TeamCal 2.8 since many files have
+been changed or added (just copy the files to a new directory on your web server).
+Also copy your old database using a different prefix.
+Change two tables:
+
+ALTER TABLE `my_tc_users` ADD `title` VARCHAR( 80 ) NULL AFTER `lastname`;
+ALTER TABLE `my_tc_users` ADD `mobile` VARCHAR( 50 ) NULL AFTER `phone`;
+ALTER TABLE `my_tc_absence` ADD `options` SMALLINT( 6 ) DEFAULT '0' AFTER `factor`;
+
+Test your new installation with your data before you cut over for good.
+
+[2.6.xxx] -> [2.7.000]
+Create a new installation of TeamCal 2.7 since nearly all files have been
+changed or deleted (just copy the files to a new directory on your web server).
+You can use you old database though except you need to add two more tables:
+
+CREATE TABLE `my_tc_announcements` (
+  `id` int(11) NOT NULL auto_increment,
+  `timestamp` timestamp(14) NOT NULL,
+  `text` text NOT NULL,
+  PRIMARY KEY  (`id`)
+) TYPE=MyISAM AUTO_INCREMENT=1;
+
+CREATE TABLE `my_tc_user_announcement` (
+  `id` int(11) NOT NULL auto_increment,
+  `username` varchar(40) NOT NULL default '',
+  `ats` timestamp(14) NOT NULL,
+  PRIMARY KEY  (`id`)
+) TYPE=MyISAM AUTO_INCREMENT=1;
+
+To be on the safe side copy your current database and rename the table prefix.
+Then point the new TeamCal installation to the new database.
+
+
+------------------------------------------------------------------------------
+[2.6.xxx] -> [2.6.003]
+Replace the following files:
+
+addprofile.php
+editcalendar.php
+editprofile.php
+log.php
+
+
+------------------------------------------------------------------------------
+-> [2.6]
+
+Version 2.6 adds more new features and options.
+
+You can keep your existing database but must apply the following changes
+(make sure you change the table names according to your naming):
+
+ALTER TABLE `my_tc_absence` ADD `factor` FLOAT DEFAULT '1' NOT NULL;
+
+ALTER TABLE `my_tc_options` ADD `decline` INT( 11 ) DEFAULT '0' NOT NULL;
+ALTER TABLE `my_tc_options` ADD `declinebefore` VARCHAR( 8 ) NOT NULL;
+ALTER TABLE `my_tc_options` ADD `declinethreshold` TINYINT DEFAULT '0' NOT NULL;
+
+ALTER TABLE `my_tc_user_group` CHANGE `type` `type` VARCHAR( 20 ) DEFAULT NULL;
+
+
+Overwrite all files and make sure to reapply the setting in your config file.
+
+Create a directory named "export" and give it write rights to the world.
+
+
+------------------------------------------------------------------------------
+-> [2.5]
+
+Version 2.5 is a complete makeover with many new features and changes. It is 
+recommended to reinstall the application.
+
+You can keep your existing database and apply the following changes:
+
+CREATE TABLE `my_tc_allowance` (
+  `id` int(11) NOT NULL auto_increment,
+  `username` varchar(40) NOT NULL default '',
+  `abssym` char(1) NOT NULL default '',
+  `lastyear` smallint(6) NOT NULL default '0',
+  `curryear` smallint(6) NOT NULL default '0',
+  PRIMARY KEY  (`id`)
+) TYPE=MyISAM AUTO_INCREMENT=1;
+
+CREATE TABLE `my_tc_options` (
+  `id` int(11) NOT NULL auto_increment,
+  `name` varchar(40) NOT NULL default '',
+  `loglevel` int(11) default NULL,
+  `logfilter` int(11) default NULL,
+  PRIMARY KEY  (`id`),
+  UNIQUE KEY `name` (`name`)
+) TYPE=MyISAM AUTO_INCREMENT=1;
+
+CREATE TABLE `my_tc_user_group` (
+  `id` int(11) NOT NULL auto_increment,
+  `username` varchar(40) default NULL,
+  `groupname` varchar(40) default NULL,
+  `type` tinytext,
+  PRIMARY KEY  (`id`)
+) TYPE=MyISAM AUTO_INCREMENT=1;
+
+CREATE TABLE `my_tc_user_options` (
+  `id` int(11) NOT NULL auto_increment,
+  `username` varchar(40) default NULL,
+  `option` varchar(40) default NULL,
+  `value` varchar(40) default NULL,
+  PRIMARY KEY  (`id`)
+) TYPE=MyISAM AUTO_INCREMENT=1;
+
+ALTER TABLE `my_tc_users` ADD `birthday` DATE DEFAULT NULL;
+ALTER TABLE `my_tc_absence` ADD `allowance` smallint(6) NOT NULL DEFAULT '0';
+
+Then recreate the log table (which hasn't been used so far):
+DROP TABLE IF EXISTS `my_tc_log`;
+CREATE TABLE `my_tc_log` (
+  `id` int(11) NOT NULL auto_increment,
+  `type` int(11) default NULL,
+  `timestamp` timestamp(14) NOT NULL,
+  `user` varchar(40) default NULL,
+  `event` text,
+  PRIMARY KEY  (`id`),
+  KEY `idx_occured` (`timestamp`)
+) TYPE=MyISAM AUTO_INCREMENT=1;
+
+
+All source files have been changed. 
+The directory structure has been changed.
+Three Javascript applications have been added.
+
+
+------------------------------------------------------------------------------
+[2.4.xxx] -> [2.4.005]
+
+No change in the database has been made but new settings have been added to 
+config.tcpro.php. Before you overwrite all files make sure you have adjusted
+config.tcpro.php to your needs.
+
+
+------------------------------------------------------------------------------
+[2.3] -> [2.4]
+
+If you are using TeamCal Pro 2.3 you can procede using your current database.
+But you need to add one field to the tc_daynote table. You can do so using
+phpMyAdmin and adding a varchar(40) field named 'username' at the end of the
+table and set the default value to 'all'. The structure will then look like:
+
+CREATE TABLE `my_tc_daynotes` (
+  `id` int(11) NOT NULL auto_increment,
+  `yyyymmdd` varchar(8) NOT NULL default '',
+  `daynote` varchar(80) NOT NULL default '',
+  `username` varchar(40) NOT NULL default 'all',
+  PRIMARY KEY  (`id`),
+  KEY `yyyymmdd` (`yyyymmdd`)
+) TYPE=MyISAM AUTO_INCREMENT=1;
+
+
+Backup your personalizations (e.g. config and header), overwrite your files
+with the 2.4 files and adjust your personal settings. Done.
+
+If you want to use TeamCal Pro 2.4 from within Mambo 4.5.1 read the 
+mambojack.txt file.
+
+
+------------------------------------------------------------------------------
+[2.2] -> [2.3]
+
+If you are using TeamCal Pro 2.2 you can procede using your current database.
+
+Backup your personalizations (e.g. config and header), overwrite your files
+with the 2.3 files and adjust your personal settings. Done.
+
+If you want to use TeamCal Pro 2.3 from within Mambo 4.5.1 read the 
+mambojack.txt file.
+
+
+------------------------------------------------------------------------------
+[2.0] [2.1] -> [2.2]
+
+If you are using TeamCal Pro 2.0 or 2.1 you can procede using your current
+database. However, you need to add one table. In any case I recommend to make
+a full backup before you start.
+
+There is a new table in the database called 'my_tc_daynotes'. You need to 
+access you database with your MySQL client and execute the following SQL 
+statement (If you have chosen a different tabel prefix in config.tcpro.php 
+make sure you rename the table accordingly.):
+
+CREATE TABLE `my_tc_daynotes` (
+  `id` int(11) NOT NULL auto_increment,
+  `yyyymmdd` varchar(8) NOT NULL default '',
+  `daynote` varchar(80) NOT NULL default '',
+  PRIMARY KEY  (`id`),
+  KEY `yyyymmdd` (`yyyymmdd`)
+) TYPE=MyISAM AUTO_INCREMENT=1 ;
+
+Backup your personalizations (e.g. config and header), overwrite your files
+with the 2.3 files and adjust your personal settings. Done.
+
+If you want to use TeamCal Pro 2.3 from within Mambo 4.5.1 read the 
+mambojack.txt file.
+
+------------------------------------------------------------------------------
+
+[Support]
+
+I will try to provide support for TeamCal Pro as far as my time allows. 
+Please don't be mad if I can't answer right away. I'll try my best.
+
+==============================================================================
+George Lewe, george@lewe.com 
+December 2004
+==============================================================================
+

@@ -1,0 +1,99 @@
+==============================================================================
+TeamCal Pro Installation
+==============================================================================
+
+Installation
+============
+Installing TeamCal Pro has been made much easier since version 3.0. An 
+installation script takes away the hassle of manually editing files to set up 
+your individual environment. The recommended basic installation steps are:
+
+1) Unpack the TeamCal Pro archive to your local hard drive
+
+2) Copy the TeamCal Pro directories including all sub directories and files to 
+   the desired location at your web space.
+   Note: The 'doc' folder is not necessary to run TeamCal Pro.
+
+3) Direct your browser to the location of your TeamCal Pro. The installation 
+   page will show.
+
+4) Enter all information as requested and click [Install]
+
+5) Delete the file "installation.php"
+
+That does not sound too difficult, does it?
+
+The default administration account after installation is:
+User ID: admin
+Password: root
+
+Make sure you change that password after first login.
+
+If you need more help with the installation page, click the [Help] button at
+the bottom.
+ 
+Adjust your personal preferences (optional)
+===========================================
+
+Header
+------
+includes/header_app_inc.php
+You can adjust your own page header if you like to show a different logo or
+image on top of the main TeamCal page.
+
+Style
+-----
+There are three themes shipped with TeamCal Pro, "tcpro", "deviant" and 
+"metro". You can create your own theme by copying one of those directories 
+in the theme folder and name it as you like. Then make your changes to your 
+new theme files. TeamCal Pro will automatically detect that new theme folder 
+and offer it as a theme selection in the configuration page.
+
+Languages
+---------
+TeamCal Pro supports different language packages. The distribution comes with 
+an English and German language file. You are free to add more languages 
+which is a fairly easy process.
+
+Make a copy of includes/lang/english.tcpro.php and name it according to the 
+language you are preparing, e.g. portugese.tcpro.php . Open your new language 
+file and change the English text values to Portugese. Make sure your not 
+touching any of the PHP code around it. Also there are some strings beginning 
+or ending with blanks. These blanks are used on purpose and are displayed 
+in TeamCal Pro. You will have to leave them there if the language you are 
+building bases on the same grammar and structure as English. If that is not the 
+case play around with the values and see how it looks when you view TeamCal Pro 
+with your file.
+
+Where there are used white spaces (&nbsp;) it is important you use them too
+if you have blanks in the string you wanna use. The white spaces avoid that
+the browsers uses carriage returns.
+
+You can switch languages by selecting one via the Language filter in the 
+main menu of TeamCal Pro. You don't have to touch any PHP code to put your 
+new language in that drop down box. As soon as a file of the naming 
+convention <language>.tcpro.php resides in the includes/lang folder it will 
+appear in the list.
+
+Manual
+------
+An English user manual is maintained here:
+https://georgelewe.atlassian.net/wiki
+
+The Help buttons will directly point to the appropriate page in the
+browser based help.
+
+Installation Support
+--------------------
+I will try to provide support for TeamCal Pro as far as my time allows. 
+
+Comments: http://forum.lewe.com
+Support: http://forum.lewe.com, https://georgelewe.atlassian.net
+Bugs: https://georgelewe.atlassian.net
+Change requests: https://georgelewe.atlassian.net
+
+Please forgive me if I can't answer right away. I'll try my best.
+
+Best regards,
+George Lewe
+george@lewe.com 
