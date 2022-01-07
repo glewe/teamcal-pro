@@ -1,7 +1,7 @@
 ![TeamCal Pro](https://github.com/glewe/teamcal-pro/raw/master/src/img/Calendar-icon-96.png)
 # TeamCal Pro
 [![PHP](https://img.shields.io/badge/Language-PHP-8892BF.svg)](https://www.php.net/)
-![Support](https://img.shields.io/badge/Support-End%20of%20life-important.svg)
+![Support](https://img.shields.io/badge/Support-End%20of%20life-critical.svg)
 
 TeamCal Pro is a legacy web application of a day-based calendar. It's generic purpose is the absence management of project teams, more precisely of their members.
 
