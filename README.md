@@ -2,6 +2,7 @@
 # TeamCal Pro
 [![PHP](https://img.shields.io/badge/Language-PHP-8892BF.svg)](https://www.php.net/)
 ![Support](https://img.shields.io/badge/Support-End%20of%20life-critical.svg)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=glewe_teamcal-pro&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=glewe_teamcal-pro)
 
 TeamCal Pro is a legacy web application of a day-based calendar. It's generic purpose is the absence management of project teams, more precisely of their members.
 

@@ -26,7 +26,7 @@ unset($CONF);
  * $CONF['app_root'] = $_SERVER['DOCUMENT_ROOT']."/tcpro/";
  * $CONF['app_url'] = "http://www.myserver.com/tcpro";
  */
-$CONF['app_root'] = $_SERVER['DOCUMENT_ROOT']."/lewe/tcpro/app/";
+$CONF['app_root'] = $_SERVER['DOCUMENT_ROOT']."/lewe/tcpro/src/";
 $CONF['app_url'] = "http://localhost/lewe/tcpro/app";
 $CONF['app_avatar_dir'] = 'img/avatar/';
 $CONF['app_icon_dir'] = 'img/icons/';
@@ -41,7 +41,7 @@ $CONF['html_title'] = 'Lewe TeamCal Pro'; // Default HTML title. Change if u lik
 $CONF['db_type']   = 1;
 $CONF['db_persistent'] = false;
 $CONF['db_server'] ="localhost";
-$CONF['db_name']   ="tcpro";
+$CONF['db_name']   ="oncall";
 $CONF['db_user']   ="root";
 $CONF['db_pass']   ="";
 /**
